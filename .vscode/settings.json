@@ -1,0 +1,8 @@
+{
+    "cmake.configurePreset": "linux-debug",
+    "files.associations": {
+        ".fantomasignore": "ignore",
+        "fstream": "cpp",
+        "sstream": "cpp"
+    }
+}

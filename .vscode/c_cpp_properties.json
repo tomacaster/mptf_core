@@ -1,0 +1,193 @@
+{
+    "configurations": [
+        {
+            "name": "Windows Debug",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:ProgramFiles(x86)}/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/include",
+                "${env:ProgramFiles(x86)}/Windows Kits/10/Include/10.0.19041.0/ucrt",
+                "${env:ProgramFiles(x86)}/Windows Kits/10/Include/10.0.19041.0/shared",
+                "${env:ProgramFiles(x86)}/Windows Kits/10/Include/10.0.19041.0/um",
+                "${env:ProgramFiles(x86)}/Windows Kits/10/Include/10.0.19041.0/winrt",
+                "${env:ProgramFiles(x86)}/Windows Kits/10/Include/10.0.19041.0/cppwinrt"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "${env:ProgramFiles(x86)}/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "windows-msvc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "${env:ProgramFiles(x86)}/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/include",
+                    "${env:ProgramFiles(x86)}/Windows Kits/10/Include/10.0.19041.0/ucrt",
+                    "${env:ProgramFiles(x86)}/Windows Kits/10/Include/10.0.19041.0/shared",
+                    "${env:ProgramFiles(x86)}/Windows Kits/10/Include/10.0.19041.0/um",
+                    "${env:ProgramFiles(x86)}/Windows Kits/10/Include/10.0.19041.0/winrt",
+                    "${env:ProgramFiles(x86)}/Windows Kits/10/Include/10.0.19041.0/cppwinrt"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        },        
+        {
+            "name": "Windows Release",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Program Files (x86)/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/include",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/shared",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/um",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/winrt",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/cppwinrt"
+            ],
+            "defines": [
+                "NDEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "windows-msvc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "C:/Program Files (x86)/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/include",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/shared",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/um",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/winrt",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/cppwinrt"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        },
+        {
+            "name": "Linux Debug",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/c++/12",
+                "/usr/include/x86_64-linux-gnu/c++/12",
+                "/usr/include/c++/12/backward",
+                "/usr/local/include",
+                "/usr/lib/gcc/x86_64-linux-gnu/12/include",
+                "/usr/include/x86_64-linux-gnu",
+                "/usr/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "/usr/include/c++/12",
+                    "/usr/include/x86_64-linux-gnu/c++/12",
+                    "/usr/include/c++/12/backward",
+                    "/usr/local/include",
+                    "/usr/lib/gcc/x86_64-linux-gnu/12/include",
+                    "/usr/include/x86_64-linux-gnu",
+                    "/usr/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        },
+        {
+            "name": "Linux Release",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/c++/12",
+                "/usr/include/x86_64-linux-gnu/c++/12",
+                "/usr/include/c++/12/backward",
+                "/usr/local/include",
+                "/usr/lib/gcc/x86_64-linux-gnu/12/include",
+                "/usr/include/x86_64-linux-gnu",
+                "/usr/include"
+            ],
+            "defines": [
+                "NDEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "/usr/include/c++/12",
+                    "/usr/include/x86_64-linux-gnu/c++/12",
+                    "/usr/include/c++/12/backward",
+                    "/usr/local/include",
+                    "/usr/lib/gcc/x86_64-linux-gnu/12/include",
+                    "/usr/include/x86_64-linux-gnu",
+                    "/usr/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        },
+        {
+            "name": "ESP-IDF Debug",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:IDF_PATH}/components/**",
+                "${env:IDF_PATH}/tools/cmake/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "${env:IDF_PATH}/components/**",
+                    "${env:IDF_PATH}/tools/cmake/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        },
+        {
+            "name": "ESP-IDF Release",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:IDF_PATH}/components/**",
+                "${env:IDF_PATH}/tools/cmake/**"
+            ],
+            "defines": [
+                "NDEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "${env:IDF_PATH}/components/**",
+                    "${env:IDF_PATH}/tools/cmake/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}

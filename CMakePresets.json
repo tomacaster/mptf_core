@@ -1,0 +1,148 @@
+{
+    "version": 3,
+    "configurePresets": [
+      {
+        "name": "windows-debug",
+        "displayName": "Windows Debug",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/windows-debug",
+        "condition": {
+          "type": "equals",
+          "lhs": "${hostSystemName}",
+          "rhs": "Windows"
+        },
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug"
+        }
+      },
+      {
+        "name": "windows-release",
+        "displayName": "Windows Release",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/windows-release",
+        "condition": {
+          "type": "equals",
+          "lhs": "${hostSystemName}",
+          "rhs": "Windows"
+        },
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Release"
+        }
+      },
+      {
+        "name": "linux-debug",
+        "displayName": "Linux Debug",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/linux-debug",
+        "condition": {
+          "type": "equals",
+          "lhs": "${hostSystemName}",
+          "rhs": "Linux"
+        },
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug"
+        }
+      },
+      {
+        "name": "linux-release",
+        "displayName": "Linux Release",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/linux-release",
+        "condition": {
+          "type": "equals",
+          "lhs": "${hostSystemName}",
+          "rhs": "Linux"
+        },
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Release"
+        }
+      },
+      {
+        "name": "esp-idf-debug",
+        "displayName": "ESP-IDF Debug",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/esp-idf-debug",
+        "condition": {
+          "type": "equals",
+          "lhs": "${hostSystemName}",
+          "rhs": "Linux"
+        },
+        "toolchainFile": "$ENV{IDF_PATH}/tools/cmake/toolchain-esp32.cmake",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "IDF_PATH": "$ENV{IDF_PATH}"
+        },
+        "environment": {
+          "IDF_PATH": "$ENV{IDF_PATH}"
+        }
+      },
+      {
+        "name": "esp-idf-release",
+        "displayName": "ESP-IDF Release",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/esp-idf-release",
+        "condition": {
+          "type": "equals",
+          "lhs": "${hostSystemName}",
+          "rhs": "Linux"
+        },
+        "toolchainFile": "$ENV{IDF_PATH}/tools/cmake/toolchain-esp32.cmake",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Release",
+          "IDF_PATH": "$ENV{IDF_PATH}"
+        },
+        "environment": {
+          "IDF_PATH": "$ENV{IDF_PATH}"
+        }
+      }
+    ],
+    "buildPresets": [
+      {
+        "name": "windows-debug-build",
+        "configurePreset": "windows-debug"
+      },
+      {
+        "name": "windows-release-build",
+        "configurePreset": "windows-release"
+      },
+      {
+        "name": "linux-debug-build",
+        "configurePreset": "linux-debug"
+      },
+      {
+        "name": "linux-release-build",
+        "configurePreset": "linux-release"
+      },
+      {
+        "name": "esp-idf-debug-build",
+        "configurePreset": "esp-idf-debug"
+      },
+      {
+        "name": "esp-idf-release-build",
+        "configurePreset": "esp-idf-release"
+      }
+    ],
+    "testPresets": [
+      {
+        "name": "windows-debug-test",
+        "configurePreset": "windows-debug",
+        "inheritConfigureEnvironment": true
+      },
+      {
+        "name": "windows-release-test",
+        "configurePreset": "windows-release",
+        "inheritConfigureEnvironment": true
+      },
+      {
+        "name": "linux-debug-test",
+        "configurePreset": "linux-debug",
+        "inheritConfigureEnvironment": true
+      },
+      {
+        "name": "linux-release-test",
+        "configurePreset": "linux-release",
+        "inheritConfigureEnvironment": true
+      }
+    ]
+  }
+  

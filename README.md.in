@@ -1,0 +1,11 @@
+# @PROJECT_NAME@
+
+## Version @PROJECT_VERSION@
+
+### Szczegóły wersji:
+- Major: @PROJECT_VERSION_MAJOR@
+- Minor: @PROJECT_VERSION_MINOR@
+- Patch: @PROJECT_VERSION_PATCH@
+
+## Opis Projektu
+Opis Twojego projektu tutaj.
