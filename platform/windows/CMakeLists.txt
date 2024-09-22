@@ -17,6 +17,16 @@ target_include_directories(windows_platform PUBLIC
     $<INSTALL_INTERFACE:include>
 )
 
+# Linkowanie bibliotek specyficznych dla Linux
+target_link_libraries(windows_platform PRIVATE pthread)
+
+# Dodanie zależności spdlog (która może wykorzystywać fmt)
+find_package(spdlog REQUIRED)
+find_package(fmt REQUIRED)
+
+# Linkowanie bibliotek spdlog i fmt
+target_link_libraries(windows_platform PUBLIC spdlog::spdlog fmt::fmt)
+
 # Definicje kompilatora specyficzne dla Windows
 target_compile_definitions(windows_platform PRIVATE WINDOWS_PLATFORM)
 

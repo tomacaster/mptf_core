@@ -20,5 +20,12 @@ target_include_directories(linux_platform PUBLIC
 # Linkowanie bibliotek specyficznych dla Linux
 target_link_libraries(linux_platform PRIVATE pthread)
 
+# Dodanie zależności spdlog (która może wykorzystywać fmt)
+find_package(spdlog REQUIRED)
+find_package(fmt REQUIRED)
+
+# Linkowanie bibliotek spdlog i fmt
+target_link_libraries(linux_platform PUBLIC spdlog::spdlog fmt::fmt)
+
 # Opcjonalne: dodawanie definicji kompilatora specyficznych dla Linux
 target_compile_definitions(linux_platform PRIVATE LINUX_PLATFORM)

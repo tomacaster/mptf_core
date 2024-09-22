@@ -1,8 +1,12 @@
 // DataObjectTest.cpp
 #include "Memory/DataObject.h"
-#include <gtest/gtest.h>
+
 #include <memory>
 #include <vector>
+
+#include <gtest/gtest.h>
+
+#include "Logger.h"
 
 // Testuje konstruktor domyślny
 TEST(DataObjectTest, DefaultConstructor)
@@ -141,6 +145,14 @@ TEST(DataObjectTest, ResizeWhenDataNull)
 }
 
 int main(int argc, char **argv) {
+
+    std::string path = "";
+    Logger::InitLogger(path);
+
+    auto logger = Logger::GetClassLogger("testClass");
+    logger->info("Test loggera");
+
+    
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }

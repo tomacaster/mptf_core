@@ -20,11 +20,15 @@ option(ENABLE_DR_MEMORY "Enable Dr. Memory for memory checking (Windows)" OFF)
 # Option for building documentation
 option(BUILD_DOC "Build the documentation with Doxygen" ON)
 
-# Configure files before the rest of the configuration
+# Configure ProjectConfig.h
 configure_file(
-  ${CMAKE_CURRENT_SOURCE_DIR}/config/Version.h.in
-  ${CMAKE_CURRENT_SOURCE_DIR}/include/Version.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/config/ProjectConfig.h.in
+  ${CMAKE_CURRENT_SOURCE_DIR}/common/include/ProjectConfig.h
+  @ONLY
 )
+
+# Add include directories
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/common/include)
 
 # Configure README.md and CHANGELOG.md
 configure_file(${CMAKE_SOURCE_DIR}/README.md.in ${CMAKE_BINARY_DIR}/README.md @ONLY)

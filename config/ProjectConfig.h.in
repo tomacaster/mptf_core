@@ -1,0 +1,10 @@
+// Version.h.in
+#pragma once
+
+namespace ProjectConfig {
+    constexpr const char* PROJECT_NAME = "@PROJECT_NAME@";
+    constexpr const char* PROJECT_VERSION = "@PROJECT_VERSION@";
+    constexpr int PROJECT_VERSION_MAJOR = @PROJECT_VERSION_MAJOR@;
+    constexpr int PROJECT_VERSION_MINOR = @PROJECT_VERSION_MINOR@;
+    constexpr int PROJECT_VERSION_PATCH = @PROJECT_VERSION_PATCH@;
+}
