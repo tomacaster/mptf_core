@@ -27,7 +27,7 @@
       </memberdef>
       <memberdef kind="define" id="Version_8h_1a4a5fc96a4bdd7d68ed99ccce9ca2e77e" prot="public" static="no">
         <name>PROJECT_VERSION_PATCH</name>
-        <initializer>1</initializer>
+        <initializer>2</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -38,7 +38,7 @@
       </memberdef>
       <memberdef kind="define" id="Version_8h_1a4a776fa6ea8b7bdf8dfa04ad42b46407" prot="public" static="no">
         <name>PROJECT_VERSION</name>
-        <initializer>&quot;0.0.1&quot;</initializer>
+        <initializer>&quot;0.0.2&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -58,8 +58,8 @@
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4" refid="Version_8h_1abecd2198575b690d25a741857f8390d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROJECT_VERSION_MAJOR<sp/>0</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5" refid="Version_8h_1a43e23009192a3e216fefec17750d8673" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROJECT_VERSION_MINOR<sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6" refid="Version_8h_1a4a5fc96a4bdd7d68ed99ccce9ca2e77e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROJECT_VERSION_PATCH<sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7" refid="Version_8h_1a4a776fa6ea8b7bdf8dfa04ad42b46407" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROJECT_VERSION<sp/>&quot;0.0.1&quot;</highlight></codeline>
+<codeline lineno="6" refid="Version_8h_1a4a5fc96a4bdd7d68ed99ccce9ca2e77e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROJECT_VERSION_PATCH<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="Version_8h_1a4a776fa6ea8b7bdf8dfa04ad42b46407" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROJECT_VERSION<sp/>&quot;0.0.2&quot;</highlight></codeline>
     </programlisting>
     <location file="/home/michal/Documents/Projekty/mptf_core/include/Version.h"/>
   </compounddef>
