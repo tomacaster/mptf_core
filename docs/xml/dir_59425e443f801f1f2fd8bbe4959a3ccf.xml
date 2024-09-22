@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_59425e443f801f1f2fd8bbe4959a3ccf" kind="dir">
+    <compoundname>/home/michal/Documents/Projekty/mptf_core/tests</compoundname>
+    <innerfile refid="test__myclass_8cpp">test_myclass.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/michal/Documents/Projekty/mptf_core/tests/"/>
+  </compounddef>
+</doxygen>

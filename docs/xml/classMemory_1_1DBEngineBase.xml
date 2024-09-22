@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classMemory_1_1DBEngineBase" kind="class" language="C++" prot="public">
+    <compoundname>Memory::DBEngineBase</compoundname>
+    <includes refid="DBEngineBase_8h" local="no">DBEngineBase.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classMemory_1_1DBEngineBase_1a8ce55a878b072bd72538c6e6ff5ace0c" prot="protected" static="no" mutable="no">
+        <type>SQLite::Database</type>
+        <definition>SQLite::Database Memory::DBEngineBase::_db</definition>
+        <argsstring></argsstring>
+        <name>_db</name>
+        <qualifiedname>Memory::DBEngineBase::_db</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="56" column="30" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classMemory_1_1DBEngineBase_1a99f6a17e5a8b8b264ffc2f8358d96044" prot="protected" static="yes" mutable="no">
+        <type>std::shared_ptr&lt; spdlog::logger &gt;</type>
+        <definition>std::shared_ptr&lt; spdlog::logger &gt; DBEngineBase::_logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <qualifiedname>Memory::DBEngineBase::_logger</qualifiedname>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="57" column="36" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1ab7b104c516db7edb02781f09d655af78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DBEngineBase::DBEngineBase</definition>
+        <argsstring>(const std::string &amp;dbPath)</argsstring>
+        <name>DBEngineBase</name>
+        <qualifiedname>Memory::DBEngineBase::DBEngineBase</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>dbPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="15" column="13" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1adebf55e077876456b22f6414328156da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DBEngineBase::CreateDatabase</definition>
+        <argsstring>(const std::string &amp;dbName)</argsstring>
+        <name>CreateDatabase</name>
+        <qualifiedname>Memory::DBEngineBase::CreateDatabase</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>dbName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="17" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1ab8fe1012aa29df1e1d6579b37fd5bf65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DBEngineBase::CreateTable</definition>
+        <argsstring>(const std::string &amp;tableName, const std::string &amp;columns)</argsstring>
+        <name>CreateTable</name>
+        <qualifiedname>Memory::DBEngineBase::CreateTable</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tableName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>columns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="20" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="18" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1ab599545a6f0065e50ac2e1ca0fbd6770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DBEngineBase::InsertData</definition>
+        <argsstring>(const std::string &amp;tableName, const std::string &amp;columns, const std::string &amp;data)</argsstring>
+        <name>InsertData</name>
+        <qualifiedname>Memory::DBEngineBase::InsertData</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tableName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>columns</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="23" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="36" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1a3dfd3f13dc2e0bf4173c511d3d76180a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DBEngineBase::SelectData</definition>
+        <argsstring>(const std::string &amp;tableName, const std::string &amp;condition)</argsstring>
+        <name>SelectData</name>
+        <qualifiedname>Memory::DBEngineBase::SelectData</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tableName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>condition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="26" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1a430e67c2c173cf9af39b3a4a494fda17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DBEngineBase::UpdateData</definition>
+        <argsstring>(const std::string &amp;tableName, const std::string &amp;newData, const std::string &amp;condition)</argsstring>
+        <name>UpdateData</name>
+        <qualifiedname>Memory::DBEngineBase::UpdateData</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tableName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newData</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>condition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="29" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1aa04ccbb974e6d9a2a11e9e12b68f0c97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DBEngineBase::DeleteData</definition>
+        <argsstring>(const std::string &amp;tableName, const std::string &amp;condition)</argsstring>
+        <name>DeleteData</name>
+        <qualifiedname>Memory::DBEngineBase::DeleteData</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tableName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>condition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="32" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1a2f70e824922f70c5331a00111c97b9d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DBEngineBase::DropTable</definition>
+        <argsstring>(const std::string &amp;tableName)</argsstring>
+        <name>DropTable</name>
+        <qualifiedname>Memory::DBEngineBase::DropTable</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tableName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="35" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1a3f0b3060765c41e0c4f7bb7d9af6431d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DBEngineBase::BeginTransaction</definition>
+        <argsstring>()</argsstring>
+        <name>BeginTransaction</name>
+        <qualifiedname>Memory::DBEngineBase::BeginTransaction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="38" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1afd7e2bf4340baf101c190da8b9304025" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DBEngineBase::CommitTransaction</definition>
+        <argsstring>()</argsstring>
+        <name>CommitTransaction</name>
+        <qualifiedname>Memory::DBEngineBase::CommitTransaction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="39" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1a3343a94de009f417b35224241b5fa2c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DBEngineBase::RollbackTransaction</definition>
+        <argsstring>()</argsstring>
+        <name>RollbackTransaction</name>
+        <qualifiedname>Memory::DBEngineBase::RollbackTransaction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="40" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1ad81043e161fd9de6e63740dedc1a1a75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DBEngineBase::CreateIndex</definition>
+        <argsstring>(const std::string &amp;indexName, const std::string &amp;tableName, const std::string &amp;columns)</argsstring>
+        <name>CreateIndex</name>
+        <qualifiedname>Memory::DBEngineBase::CreateIndex</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>indexName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tableName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>columns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="43" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1ac432fb67a207acc74d4dd256792df396" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DBEngineBase::OptimizeQuery</definition>
+        <argsstring>(const std::string &amp;query)</argsstring>
+        <name>OptimizeQuery</name>
+        <qualifiedname>Memory::DBEngineBase::OptimizeQuery</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>query</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="46" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1ace3f8ff8c2e4eace929d16b2dfd09092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DBEngineBase::ConnectToDatabase</definition>
+        <argsstring>(const std::string &amp;dbName)</argsstring>
+        <name>ConnectToDatabase</name>
+        <qualifiedname>Memory::DBEngineBase::ConnectToDatabase</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>dbName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="49" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1ac4c29a747bbcbdd5b5bc60a266cc5cdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DBEngineBase::DisconnectFromDatabase</definition>
+        <argsstring>()</argsstring>
+        <name>DisconnectFromDatabase</name>
+        <qualifiedname>Memory::DBEngineBase::DisconnectFromDatabase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="50" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DBEngineBase_1aeb9905304e8f8128ad22a2e3730c90ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DBEngineBase::HandleError</definition>
+        <argsstring>(const std::string &amp;errorMessage)</argsstring>
+        <name>HandleError</name>
+        <qualifiedname>Memory::DBEngineBase::HandleError</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>errorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="53" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DBEngineBase.cpp" bodystart="108" bodyend="111"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" line="12" column="5" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DBEngineBase.h" bodystart="13" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classMemory_1_1DBEngineBase_1a8ce55a878b072bd72538c6e6ff5ace0c" prot="protected" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>_db</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1a99f6a17e5a8b8b264ffc2f8358d96044" prot="protected" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>_logger</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1a3f0b3060765c41e0c4f7bb7d9af6431d" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>BeginTransaction</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1afd7e2bf4340baf101c190da8b9304025" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>CommitTransaction</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1ace3f8ff8c2e4eace929d16b2dfd09092" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>ConnectToDatabase</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1adebf55e077876456b22f6414328156da" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>CreateDatabase</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1ad81043e161fd9de6e63740dedc1a1a75" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>CreateIndex</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1ab8fe1012aa29df1e1d6579b37fd5bf65" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>CreateTable</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1ab7b104c516db7edb02781f09d655af78" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>DBEngineBase</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1aa04ccbb974e6d9a2a11e9e12b68f0c97" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>DeleteData</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1ac4c29a747bbcbdd5b5bc60a266cc5cdb" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>DisconnectFromDatabase</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1a2f70e824922f70c5331a00111c97b9d1" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>DropTable</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1aeb9905304e8f8128ad22a2e3730c90ab" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>HandleError</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1ab599545a6f0065e50ac2e1ca0fbd6770" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>InsertData</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1ac432fb67a207acc74d4dd256792df396" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>OptimizeQuery</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1a3343a94de009f417b35224241b5fa2c4" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>RollbackTransaction</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1a3dfd3f13dc2e0bf4173c511d3d76180a" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>SelectData</name></member>
+      <member refid="classMemory_1_1DBEngineBase_1a430e67c2c173cf9af39b3a4a494fda17" prot="public" virt="non-virtual"><scope>Memory::DBEngineBase</scope><name>UpdateData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

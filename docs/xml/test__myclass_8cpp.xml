@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="test__myclass_8cpp" kind="file" language="C++">
+    <compoundname>test_myclass.cpp</compoundname>
+    <includes refid="DataObject_8h" local="yes">Memory/DataObject.h</includes>
+    <includes local="no">gtest/gtest.h</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Memory/DataObject.h</label>
+        <link refid="DataObject_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp</label>
+        <link refid="test__myclass_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cstddef</label>
+      </node>
+      <node id="6">
+        <label>gtest/gtest.h</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="test__myclass_8cpp_1a21a730c107ed988ebd7725a488443f24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(DataObjectTest, DefaultConstructor)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DataObjectTest</type>
+        </param>
+        <param>
+          <type>DefaultConstructor</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" line="8" column="1" bodyfile="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" bodystart="8" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="test__myclass_8cpp_1ae7196867542a306344f350f1148074d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(DataObjectTest, ConstructorWithData)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DataObjectTest</type>
+        </param>
+        <param>
+          <type>ConstructorWithData</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" line="17" column="1" bodyfile="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="test__myclass_8cpp_1a97aca3e319daf5247801563b7feb2cec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(DataObjectTest, SetDataValid)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DataObjectTest</type>
+        </param>
+        <param>
+          <type>SetDataValid</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" line="26" column="1" bodyfile="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" bodystart="26" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="test__myclass_8cpp_1ab0b5394cfcacf796c4e032a59dad5f2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(DataObjectTest, SetDataNull)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DataObjectTest</type>
+        </param>
+        <param>
+          <type>SetDataNull</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" line="37" column="1" bodyfile="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" bodystart="37" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="test__myclass_8cpp_1af7a39343aefa1a26f22483ca5ea01c89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(DataObjectTest, Allocate)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DataObjectTest</type>
+        </param>
+        <param>
+          <type>Allocate</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" line="48" column="1" bodyfile="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" bodystart="48" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="test__myclass_8cpp_1a1293372a978f48b01802eb30fd61d303" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(DataObjectTest, ResizeWithoutForce)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DataObjectTest</type>
+        </param>
+        <param>
+          <type>ResizeWithoutForce</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" line="63" column="1" bodyfile="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" bodystart="63" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="test__myclass_8cpp_1a6a92355e033bc266e4e17d59ddc7b921" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(DataObjectTest, ResizeWithForce)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DataObjectTest</type>
+        </param>
+        <param>
+          <type>ResizeWithForce</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" line="74" column="1" bodyfile="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" bodystart="74" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="test__myclass_8cpp_1acb69cb27bb08d7d1e6e303d6c28e4b2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(DataObjectTest, ResizeLarger)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DataObjectTest</type>
+        </param>
+        <param>
+          <type>ResizeLarger</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" line="85" column="1" bodyfile="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" bodystart="85" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="test__myclass_8cpp_1a9fe9eec738036bd8034f6b8dee25808d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(DataObjectTest, SizeMethod)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DataObjectTest</type>
+        </param>
+        <param>
+          <type>SizeMethod</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" line="96" column="1" bodyfile="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" bodystart="96" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="test__myclass_8cpp_1a550a37bd042cda5abb051d5136a8d46e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(DataObjectTest, GetDataNull)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DataObjectTest</type>
+        </param>
+        <param>
+          <type>GetDataNull</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" line="110" column="1" bodyfile="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" bodystart="110" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="test__myclass_8cpp_1a44935466f7a13b8f792f7fe5ef2d2a0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(DataObjectTest, SharedData)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DataObjectTest</type>
+        </param>
+        <param>
+          <type>SharedData</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" line="119" column="1" bodyfile="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" bodystart="119" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="test__myclass_8cpp_1aa92f70e6d554bfe3ac5a0147a94ef8a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(DataObjectTest, ResizeWhenDataNull)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DataObjectTest</type>
+        </param>
+        <param>
+          <type>ResizeWhenDataNull</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" line="133" column="1" bodyfile="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" bodystart="133" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="test__myclass_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" line="143" column="5" bodyfile="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp" bodystart="143" bodyend="146"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>DataObjectTest.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DataObject_8h" kindref="compound">Memory/DataObject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Testuje<sp/>konstruktor<sp/>domyślny</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="test__myclass_8cpp_1a21a730c107ed988ebd7725a488443f24" kindref="member">TEST</ref>(DataObjectTest,<sp/>DefaultConstructor)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject" kindref="compound">Memory::DataObject</ref><sp/>obj;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(obj.<ref refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" kindref="member">GetData</ref>(),<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" kindref="member">Size</ref>(),<sp/>0u);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" kindref="member">GetData</ref>()-&gt;size(),<sp/>0u);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Testuje<sp/>konstruktor<sp/>z<sp/>shared_ptr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="test__myclass_8cpp_1a21a730c107ed988ebd7725a488443f24" kindref="member">TEST</ref>(DataObjectTest,<sp/>ConstructorWithData)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>data<sp/>=<sp/>std::make_shared&lt;std::vector&lt;char&gt;&gt;(100,<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject" kindref="compound">Memory::DataObject</ref><sp/>obj(data);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.GetData(),<sp/>data);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.Size(),<sp/>100u);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Testuje<sp/>SetData<sp/>z<sp/>poprawnymi<sp/>danymi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="test__myclass_8cpp_1a21a730c107ed988ebd7725a488443f24" kindref="member">TEST</ref>(DataObjectTest,<sp/>SetDataValid)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject" kindref="compound">Memory::DataObject</ref><sp/>obj;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>data<sp/>=<sp/>std::make_shared&lt;std::vector&lt;char&gt;&gt;(50,<sp/></highlight><highlight class="charliteral">&apos;b&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>obj.<ref refid="classMemory_1_1DataObject_1aff65a9f8fd1d0e245951de009a9dd93f" kindref="member">SetData</ref>(std::move(data));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(size,<sp/>50u);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" kindref="member">Size</ref>(),<sp/>50u);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" kindref="member">GetData</ref>()-&gt;size(),<sp/>50u);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Testuje<sp/>SetData<sp/>z<sp/>null<sp/>shared_ptr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><ref refid="test__myclass_8cpp_1a21a730c107ed988ebd7725a488443f24" kindref="member">TEST</ref>(DataObjectTest,<sp/>SetDataNull)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject" kindref="compound">Memory::DataObject</ref><sp/>obj;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;std::vector&lt;char&gt;&gt;<sp/>data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>obj.<ref refid="classMemory_1_1DataObject_1aff65a9f8fd1d0e245951de009a9dd93f" kindref="member">SetData</ref>(std::move(data));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(size,<sp/>0u);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" kindref="member">Size</ref>(),<sp/>0u);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" kindref="member">GetData</ref>(),<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Testuje<sp/>metodę<sp/>Allocate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="test__myclass_8cpp_1a21a730c107ed988ebd7725a488443f24" kindref="member">TEST</ref>(DataObjectTest,<sp/>Allocate)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject" kindref="compound">Memory::DataObject</ref><sp/>obj;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>obj.<ref refid="classMemory_1_1DataObject_1a4182a39d861545728b8f9a61af7d3d41" kindref="member">Allocate</ref>(200);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_NE(obj.<ref refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" kindref="member">GetData</ref>(),<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" kindref="member">Size</ref>(),<sp/>200u);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" kindref="member">GetData</ref>()-&gt;size(),<sp/>200u);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sprawdza,<sp/>czy<sp/>wszystkie<sp/>elementy<sp/>są<sp/>zainicjalizowane<sp/>na<sp/>&apos;\0&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>c<sp/>:<sp/>*obj.GetData())</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EXPECT_EQ(c,<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Testuje<sp/>Resize<sp/>bez<sp/>wymuszania</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><ref refid="test__myclass_8cpp_1a21a730c107ed988ebd7725a488443f24" kindref="member">TEST</ref>(DataObjectTest,<sp/>ResizeWithoutForce)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>data<sp/>=<sp/>std::make_shared&lt;std::vector&lt;char&gt;&gt;(100,<sp/></highlight><highlight class="charliteral">&apos;c&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject" kindref="compound">Memory::DataObject</ref><sp/>obj(data);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>obj.<ref refid="classMemory_1_1DataObject_1a64dff114f0db7909bed18eb08f622fdc" kindref="member">Resize</ref>(80);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(result);<sp/></highlight><highlight class="comment">//<sp/>Resize<sp/>nie<sp/>powinien<sp/>się<sp/>powieść</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" kindref="member">Size</ref>(),<sp/>100u);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" kindref="member">GetData</ref>()-&gt;size(),<sp/>100u);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Testuje<sp/>Resize<sp/>z<sp/>wymuszeniem</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><ref refid="test__myclass_8cpp_1a21a730c107ed988ebd7725a488443f24" kindref="member">TEST</ref>(DataObjectTest,<sp/>ResizeWithForce)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>data<sp/>=<sp/>std::make_shared&lt;std::vector&lt;char&gt;&gt;(100,<sp/></highlight><highlight class="charliteral">&apos;d&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject" kindref="compound">Memory::DataObject</ref><sp/>obj(data);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>obj.<ref refid="classMemory_1_1DataObject_1a64dff114f0db7909bed18eb08f622fdc" kindref="member">Resize</ref>(80,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(result);<sp/></highlight><highlight class="comment">//<sp/>Resize<sp/>powinien<sp/>się<sp/>powieść</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" kindref="member">Size</ref>(),<sp/>80u);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" kindref="member">GetData</ref>()-&gt;size(),<sp/>80u);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Testuje<sp/>Resize<sp/>na<sp/>większy<sp/>rozmiar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><ref refid="test__myclass_8cpp_1a21a730c107ed988ebd7725a488443f24" kindref="member">TEST</ref>(DataObjectTest,<sp/>ResizeLarger)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>data<sp/>=<sp/>std::make_shared&lt;std::vector&lt;char&gt;&gt;(50,<sp/></highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject" kindref="compound">Memory::DataObject</ref><sp/>obj(data);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>obj.<ref refid="classMemory_1_1DataObject_1a64dff114f0db7909bed18eb08f622fdc" kindref="member">Resize</ref>(100);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(result);<sp/></highlight><highlight class="comment">//<sp/>Resize<sp/>powinien<sp/>się<sp/>powieść</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" kindref="member">Size</ref>(),<sp/>100u);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" kindref="member">GetData</ref>()-&gt;size(),<sp/>100u);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Testuje<sp/>metodę<sp/>Size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><ref refid="test__myclass_8cpp_1a21a730c107ed988ebd7725a488443f24" kindref="member">TEST</ref>(DataObjectTest,<sp/>SizeMethod)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject" kindref="compound">Memory::DataObject</ref><sp/>obj;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" kindref="member">Size</ref>(),<sp/>0u);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>obj.<ref refid="classMemory_1_1DataObject_1a4182a39d861545728b8f9a61af7d3d41" kindref="member">Allocate</ref>(10);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" kindref="member">Size</ref>(),<sp/>10u);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>data<sp/>=<sp/>std::make_shared&lt;std::vector&lt;char&gt;&gt;(20,<sp/></highlight><highlight class="charliteral">&apos;f&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>obj.<ref refid="classMemory_1_1DataObject_1aff65a9f8fd1d0e245951de009a9dd93f" kindref="member">SetData</ref>(std::move(data));</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" kindref="member">Size</ref>(),<sp/>20u);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Testuje<sp/>GetData<sp/>gdy<sp/>_data<sp/>jest<sp/>null</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><ref refid="test__myclass_8cpp_1a21a730c107ed988ebd7725a488443f24" kindref="member">TEST</ref>(DataObjectTest,<sp/>GetDataNull)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject" kindref="compound">Memory::DataObject</ref><sp/>obj;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>obj.<ref refid="classMemory_1_1DataObject_1aff65a9f8fd1d0e245951de009a9dd93f" kindref="member">SetData</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" kindref="member">GetData</ref>(),<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" kindref="member">Size</ref>(),<sp/>0u);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Testuje<sp/>współdzielenie<sp/>danych<sp/>przez<sp/>wiele<sp/>instancji</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><ref refid="test__myclass_8cpp_1a21a730c107ed988ebd7725a488443f24" kindref="member">TEST</ref>(DataObjectTest,<sp/>SharedData)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>data<sp/>=<sp/>std::make_shared&lt;std::vector&lt;char&gt;&gt;(30,<sp/></highlight><highlight class="charliteral">&apos;g&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject" kindref="compound">Memory::DataObject</ref><sp/>obj1(data);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject" kindref="compound">Memory::DataObject</ref><sp/>obj2<sp/>=<sp/>obj1;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj1.GetData(),<sp/>obj2.<ref refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" kindref="member">GetData</ref>());</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj1.Size(),<sp/>obj2.<ref refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" kindref="member">Size</ref>());</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Modyfikuje<sp/>dane<sp/>przez<sp/>obj1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>obj1.GetData()-&gt;at(0)<sp/>=<sp/></highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj2.<ref refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" kindref="member">GetData</ref>()-&gt;at(0),<sp/></highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Testuje<sp/>Resize<sp/>gdy<sp/>_data<sp/>jest<sp/>początkowo<sp/>null</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><ref refid="test__myclass_8cpp_1a21a730c107ed988ebd7725a488443f24" kindref="member">TEST</ref>(DataObjectTest,<sp/>ResizeWhenDataNull)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject" kindref="compound">Memory::DataObject</ref><sp/>obj;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>obj.<ref refid="classMemory_1_1DataObject_1aff65a9f8fd1d0e245951de009a9dd93f" kindref="member">SetData</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>obj.<ref refid="classMemory_1_1DataObject_1a64dff114f0db7909bed18eb08f622fdc" kindref="member">Resize</ref>(25);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_TRUE(result);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" kindref="member">Size</ref>(),<sp/>25u);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(obj.<ref refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" kindref="member">GetData</ref>()-&gt;size(),<sp/>25u);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="test__myclass_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv)<sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>::testing::InitGoogleTest(&amp;argc,<sp/>argv);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RUN_ALL_TESTS();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp"/>
+  </compounddef>
+</doxygen>

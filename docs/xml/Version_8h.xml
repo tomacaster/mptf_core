@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Version_8h" kind="file" language="C++">
+    <compoundname>Version.h</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="Version_8h_1abecd2198575b690d25a741857f8390d1" prot="public" static="no">
+        <name>PROJECT_VERSION_MAJOR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/include/Version.h" line="4" column="9" bodyfile="/home/michal/Documents/Projekty/mptf_core/include/Version.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Version_8h_1a43e23009192a3e216fefec17750d8673" prot="public" static="no">
+        <name>PROJECT_VERSION_MINOR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/include/Version.h" line="5" column="9" bodyfile="/home/michal/Documents/Projekty/mptf_core/include/Version.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Version_8h_1a4a5fc96a4bdd7d68ed99ccce9ca2e77e" prot="public" static="no">
+        <name>PROJECT_VERSION_PATCH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/include/Version.h" line="6" column="9" bodyfile="/home/michal/Documents/Projekty/mptf_core/include/Version.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Version_8h_1a4a776fa6ea8b7bdf8dfa04ad42b46407" prot="public" static="no">
+        <name>PROJECT_VERSION</name>
+        <initializer>&quot;0.0.1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/include/Version.h" line="7" column="9" bodyfile="/home/michal/Documents/Projekty/mptf_core/include/Version.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Version.h.in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="Version_8h_1abecd2198575b690d25a741857f8390d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROJECT_VERSION_MAJOR<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="Version_8h_1a43e23009192a3e216fefec17750d8673" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROJECT_VERSION_MINOR<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="Version_8h_1a4a5fc96a4bdd7d68ed99ccce9ca2e77e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROJECT_VERSION_PATCH<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="Version_8h_1a4a776fa6ea8b7bdf8dfa04ad42b46407" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROJECT_VERSION<sp/>&quot;0.0.1&quot;</highlight></codeline>
+    </programlisting>
+    <location file="/home/michal/Documents/Projekty/mptf_core/include/Version.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classMemory_1_1FileManagerBase" kind="class" language="C++" prot="public">
+    <compoundname>Memory::FileManagerBase</compoundname>
+    <derivedcompoundref refid="classMemory_1_1StorageBase" prot="private" virt="non-virtual">Memory::StorageBase</derivedcompoundref>
+    <includes refid="FileManagerBase_8h" local="no">FileManagerBase.h</includes>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classMemory_1_1FileManagerBase_1a08814a57433042ea78cd33584752ac7b" prot="private" static="yes" mutable="no">
+        <type>std::shared_ptr&lt; spdlog::logger &gt;</type>
+        <definition>std::shared_ptr&lt; spdlog::logger &gt; FileManagerBase::_logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <qualifiedname>Memory::FileManagerBase::_logger</qualifiedname>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/FileManagerBase.h" line="22" column="36" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/FileManagerBase.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMemory_1_1FileManagerBase_1ac79c19e4c4819988897e3b77a8f53395" prot="private" static="no" mutable="no">
+        <type>std::shared_mutex</type>
+        <definition>std::shared_mutex Memory::FileManagerBase::_mutex</definition>
+        <argsstring></argsstring>
+        <name>_mutex</name>
+        <qualifiedname>Memory::FileManagerBase::_mutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/FileManagerBase.h" line="23" column="31" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/FileManagerBase.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMemory_1_1FileManagerBase_1a2ae1d61126b6070e0a5e85a3f3140746" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FileManagerBase::FileManagerBase</definition>
+        <argsstring>()</argsstring>
+        <name>FileManagerBase</name>
+        <qualifiedname>Memory::FileManagerBase::FileManagerBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/FileManagerBase.h" line="16" column="13" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/FileManagerBase.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1FileManagerBase_1ae7b9635e88390651685d5e2182c3ede7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; std::ifstream &gt;</type>
+        <definition>std::shared_ptr&lt; std::ifstream &gt; FileManagerBase::OpenFile</definition>
+        <argsstring>(const fs::path &amp;path, std::ios_base::openmode mode, bool createIf=true)</argsstring>
+        <name>OpenFile</name>
+        <qualifiedname>Memory::FileManagerBase::OpenFile</qualifiedname>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>std::ios_base::openmode</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>createIf</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/FileManagerBase.h" line="17" column="29" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/FileManagerBase.cpp" bodystart="14" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1FileManagerBase_1ad6076133627db5d6f80e12c99d42d959" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FileManagerBase::SaveFile</definition>
+        <argsstring>(const fs::path &amp;path, bool overwrite=false)</argsstring>
+        <name>SaveFile</name>
+        <qualifiedname>Memory::FileManagerBase::SaveFile</qualifiedname>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>overwrite</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/FileManagerBase.h" line="18" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/FileManagerBase.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMemory_1_1FileManagerBase_1a84454564898faa2afb52a96be4174fee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FileManagerBase::CreateFile</definition>
+        <argsstring>(const fs::path &amp;path, bool overwrite=false)</argsstring>
+        <name>CreateFile</name>
+        <qualifiedname>Memory::FileManagerBase::CreateFile</qualifiedname>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>overwrite</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/FileManagerBase.h" line="19" column="25" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/FileManagerBase.cpp" bodystart="49" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1FileManagerBase_1a1539080f7de19b898a56c854d35ecbbb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Memory::FileManagerBase::CreateDirectory</definition>
+        <argsstring>(const fs::path &amp;path)</argsstring>
+        <name>CreateDirectory</name>
+        <qualifiedname>Memory::FileManagerBase::CreateDirectory</qualifiedname>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/FileManagerBase.h" line="20" column="25" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/FileManagerBase.cpp" bodystart="87" bodyend="109"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Memory::FileManagerBase</label>
+        <link refid="classMemory_1_1FileManagerBase"/>
+      </node>
+      <node id="2">
+        <label>Memory::StorageBase</label>
+        <link refid="classMemory_1_1StorageBase"/>
+        <childnode refid="1" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/FileManagerBase.h" line="13" column="5" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/FileManagerBase.h" bodystart="14" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classMemory_1_1FileManagerBase_1a08814a57433042ea78cd33584752ac7b" prot="private" virt="non-virtual"><scope>Memory::FileManagerBase</scope><name>_logger</name></member>
+      <member refid="classMemory_1_1FileManagerBase_1ac79c19e4c4819988897e3b77a8f53395" prot="private" virt="non-virtual"><scope>Memory::FileManagerBase</scope><name>_mutex</name></member>
+      <member refid="classMemory_1_1FileManagerBase_1a1539080f7de19b898a56c854d35ecbbb" prot="public" virt="non-virtual"><scope>Memory::FileManagerBase</scope><name>CreateDirectory</name></member>
+      <member refid="classMemory_1_1FileManagerBase_1a84454564898faa2afb52a96be4174fee" prot="public" virt="non-virtual"><scope>Memory::FileManagerBase</scope><name>CreateFile</name></member>
+      <member refid="classMemory_1_1FileManagerBase_1a2ae1d61126b6070e0a5e85a3f3140746" prot="public" virt="non-virtual"><scope>Memory::FileManagerBase</scope><name>FileManagerBase</name></member>
+      <member refid="classMemory_1_1FileManagerBase_1ae7b9635e88390651685d5e2182c3ede7" prot="public" virt="non-virtual"><scope>Memory::FileManagerBase</scope><name>OpenFile</name></member>
+      <member refid="classMemory_1_1FileManagerBase_1ad6076133627db5d6f80e12c99d42d959" prot="public" virt="non-virtual"><scope>Memory::FileManagerBase</scope><name>SaveFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

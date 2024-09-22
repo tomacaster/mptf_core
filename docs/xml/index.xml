@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="classMemory_1_1DataObject" kind="class"><name>Memory::DataObject</name>
+    <member refid="classMemory_1_1DataObject_1a3f0fe0ba0f5f03359db94943541d6058" kind="variable"><name>_data</name></member>
+    <member refid="classMemory_1_1DataObject_1a64ea371455d887bdd76cccd8eed4e5ae" kind="function"><name>DataObject</name></member>
+    <member refid="classMemory_1_1DataObject_1a62e162d5de38cb2ca2b629e109565839" kind="function"><name>DataObject</name></member>
+    <member refid="classMemory_1_1DataObject_1a18339d55de998f72dba59b19b46fb5fd" kind="function"><name>~DataObject</name></member>
+    <member refid="classMemory_1_1DataObject_1aff65a9f8fd1d0e245951de009a9dd93f" kind="function"><name>SetData</name></member>
+    <member refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" kind="function"><name>GetData</name></member>
+    <member refid="classMemory_1_1DataObject_1a4182a39d861545728b8f9a61af7d3d41" kind="function"><name>Allocate</name></member>
+    <member refid="classMemory_1_1DataObject_1a64dff114f0db7909bed18eb08f622fdc" kind="function"><name>Resize</name></member>
+    <member refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" kind="function"><name>Size</name></member>
+  </compound>
+  <compound refid="classMemory_1_1DBEngineBase" kind="class"><name>Memory::DBEngineBase</name>
+    <member refid="classMemory_1_1DBEngineBase_1a8ce55a878b072bd72538c6e6ff5ace0c" kind="variable"><name>_db</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1a99f6a17e5a8b8b264ffc2f8358d96044" kind="variable"><name>_logger</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1ab7b104c516db7edb02781f09d655af78" kind="function"><name>DBEngineBase</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1adebf55e077876456b22f6414328156da" kind="function"><name>CreateDatabase</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1ab8fe1012aa29df1e1d6579b37fd5bf65" kind="function"><name>CreateTable</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1ab599545a6f0065e50ac2e1ca0fbd6770" kind="function"><name>InsertData</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1a3dfd3f13dc2e0bf4173c511d3d76180a" kind="function"><name>SelectData</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1a430e67c2c173cf9af39b3a4a494fda17" kind="function"><name>UpdateData</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1aa04ccbb974e6d9a2a11e9e12b68f0c97" kind="function"><name>DeleteData</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1a2f70e824922f70c5331a00111c97b9d1" kind="function"><name>DropTable</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1a3f0b3060765c41e0c4f7bb7d9af6431d" kind="function"><name>BeginTransaction</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1afd7e2bf4340baf101c190da8b9304025" kind="function"><name>CommitTransaction</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1a3343a94de009f417b35224241b5fa2c4" kind="function"><name>RollbackTransaction</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1ad81043e161fd9de6e63740dedc1a1a75" kind="function"><name>CreateIndex</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1ac432fb67a207acc74d4dd256792df396" kind="function"><name>OptimizeQuery</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1ace3f8ff8c2e4eace929d16b2dfd09092" kind="function"><name>ConnectToDatabase</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1ac4c29a747bbcbdd5b5bc60a266cc5cdb" kind="function"><name>DisconnectFromDatabase</name></member>
+    <member refid="classMemory_1_1DBEngineBase_1aeb9905304e8f8128ad22a2e3730c90ab" kind="function"><name>HandleError</name></member>
+  </compound>
+  <compound refid="classMemory_1_1FileManagerBase" kind="class"><name>Memory::FileManagerBase</name>
+    <member refid="classMemory_1_1FileManagerBase_1a08814a57433042ea78cd33584752ac7b" kind="variable"><name>_logger</name></member>
+    <member refid="classMemory_1_1FileManagerBase_1ac79c19e4c4819988897e3b77a8f53395" kind="variable"><name>_mutex</name></member>
+    <member refid="classMemory_1_1FileManagerBase_1a2ae1d61126b6070e0a5e85a3f3140746" kind="function"><name>FileManagerBase</name></member>
+    <member refid="classMemory_1_1FileManagerBase_1ae7b9635e88390651685d5e2182c3ede7" kind="function"><name>OpenFile</name></member>
+    <member refid="classMemory_1_1FileManagerBase_1ad6076133627db5d6f80e12c99d42d959" kind="function"><name>SaveFile</name></member>
+    <member refid="classMemory_1_1FileManagerBase_1a84454564898faa2afb52a96be4174fee" kind="function"><name>CreateFile</name></member>
+    <member refid="classMemory_1_1FileManagerBase_1a1539080f7de19b898a56c854d35ecbbb" kind="function"><name>CreateDirectory</name></member>
+  </compound>
+  <compound refid="classLogger" kind="class"><name>Logger</name>
+    <member refid="classLogger_1add3ad2a55ae80b726b6aec0c213e74cc" kind="variable"><name>MAIN_LOGGER_PATTERN</name></member>
+    <member refid="classLogger_1aca7ac72940de592bab2635661b55fe22" kind="variable"><name>_consoleSink</name></member>
+    <member refid="classLogger_1aa88a74b8695d2cfe3222a46387dfff97" kind="variable"><name>_fileSink</name></member>
+    <member refid="classLogger_1a0df54ca5e648634cfea181533456eeb8" kind="function"><name>InitLogger</name></member>
+    <member refid="classLogger_1a6701eab58362c2bed9730da5738c67a7" kind="function"><name>GetClassLogger</name></member>
+    <member refid="classLogger_1abc41bfb031d896170c7675fa96a6b30c" kind="function"><name>Logger</name></member>
+    <member refid="classLogger_1acb668a9e186a25fbaad2e4af6d1ed00a" kind="function"><name>~Logger</name></member>
+  </compound>
+  <compound refid="classMemory_1_1MemoryStream" kind="class"><name>Memory::MemoryStream</name>
+    <member refid="classMemory_1_1MemoryStream_1ac6c1860243df615288b324a5eb258974" kind="variable"><name>_mutex</name></member>
+    <member refid="classMemory_1_1MemoryStream_1ab5df6ad7b5a1236ec7a84f64547bc242" kind="variable"><name>_memory</name></member>
+    <member refid="classMemory_1_1MemoryStream_1a3643391afae1356fb89532ec6c4713df" kind="function"><name>MemoryStream</name></member>
+    <member refid="classMemory_1_1MemoryStream_1a4069b894ea180800ea60420e51c3588f" kind="function"><name>Open</name></member>
+    <member refid="classMemory_1_1MemoryStream_1a7a8444f9deb96308d4b7afa66481959f" kind="function"><name>Read</name></member>
+    <member refid="classMemory_1_1MemoryStream_1a1b09c31281f40a6ef78a78c991f9f4ee" kind="function"><name>Seek</name></member>
+    <member refid="classMemory_1_1MemoryStream_1abd08779d9b828a4366f016c75bea6b6e" kind="function"><name>Close</name></member>
+  </compound>
+  <compound refid="classMemory_1_1StorageBase" kind="class"><name>Memory::StorageBase</name>
+    <member refid="classMemory_1_1StorageBase_1a121e4ae15c4d699ac9283c92193b948a" kind="variable"><name>_logger</name></member>
+    <member refid="classMemory_1_1StorageBase_1a089798cb12aeba366f692569b3a75ccf" kind="variable"><name>_homeDir</name></member>
+    <member refid="classMemory_1_1StorageBase_1a8eec253c6d0ca461dab5633120370e36" kind="function"><name>StorageBase</name></member>
+    <member refid="classMemory_1_1StorageBase_1afcc2a926a7db11ff7fc0f825c73b4bdb" kind="function"><name>CleanStorage</name></member>
+    <member refid="classMemory_1_1StorageBase_1a97013b8b588ad3c62845ab7b3cd5c9c5" kind="function"><name>GetHomedir</name></member>
+    <member refid="classMemory_1_1StorageBase_1a51369d9b8df6900d7addc2e0eba80898" kind="function"><name>InitStorage</name></member>
+    <member refid="classMemory_1_1StorageBase_1ab413b9fd2999d136007cfd1f0b941b97" kind="function"><name>CreateAppFolders</name></member>
+  </compound>
+  <compound refid="namespaceConsts" kind="namespace"><name>Consts</name>
+    <member refid="namespaceConsts_1aa9f8a26f69994701439cb956cceded8b" kind="variable"><name>APP_DIR_ENV</name></member>
+  </compound>
+  <compound refid="namespaceMemory" kind="namespace"><name>Memory</name>
+  </compound>
+  <compound refid="namespaceMptf__core" kind="namespace"><name>Mptf_core</name>
+  </compound>
+  <compound refid="namespaceMptf__core_1_1Platform" kind="namespace"><name>Mptf_core::Platform</name>
+  </compound>
+  <compound refid="namespaceMptf__core_1_1Platform_1_1Esp32" kind="namespace"><name>Mptf_core::Platform::Esp32</name>
+  </compound>
+  <compound refid="namespaceMptf__core_1_1Platform_1_1Linux" kind="namespace"><name>Mptf_core::Platform::Linux</name>
+  </compound>
+  <compound refid="namespaceMptf__core_1_1Platform_1_1Windows" kind="namespace"><name>Mptf_core::Platform::Windows</name>
+  </compound>
+  <compound refid="Consts_8h" kind="file"><name>Consts.h</name>
+  </compound>
+  <compound refid="Logger_8h" kind="file"><name>Logger.h</name>
+  </compound>
+  <compound refid="DataObject_8h" kind="file"><name>DataObject.h</name>
+  </compound>
+  <compound refid="DBEngineBase_8h" kind="file"><name>DBEngineBase.h</name>
+  </compound>
+  <compound refid="FileManagerBase_8h" kind="file"><name>FileManagerBase.h</name>
+  </compound>
+  <compound refid="MemoryStream_8h" kind="file"><name>MemoryStream.h</name>
+  </compound>
+  <compound refid="Storage_8h" kind="file"><name>Storage.h</name>
+  </compound>
+  <compound refid="Logger_8cpp" kind="file"><name>Logger.cpp</name>
+  </compound>
+  <compound refid="DataObject_8cpp" kind="file"><name>DataObject.cpp</name>
+  </compound>
+  <compound refid="DBEngineBase_8cpp" kind="file"><name>DBEngineBase.cpp</name>
+  </compound>
+  <compound refid="FileManagerBase_8cpp" kind="file"><name>FileManagerBase.cpp</name>
+  </compound>
+  <compound refid="MemoryStream_8cpp" kind="file"><name>MemoryStream.cpp</name>
+  </compound>
+  <compound refid="Storage_8cpp" kind="file"><name>Storage.cpp</name>
+  </compound>
+  <compound refid="Version_8h" kind="file"><name>Version.h</name>
+    <member refid="Version_8h_1abecd2198575b690d25a741857f8390d1" kind="define"><name>PROJECT_VERSION_MAJOR</name></member>
+    <member refid="Version_8h_1a43e23009192a3e216fefec17750d8673" kind="define"><name>PROJECT_VERSION_MINOR</name></member>
+    <member refid="Version_8h_1a4a5fc96a4bdd7d68ed99ccce9ca2e77e" kind="define"><name>PROJECT_VERSION_PATCH</name></member>
+    <member refid="Version_8h_1a4a776fa6ea8b7bdf8dfa04ad42b46407" kind="define"><name>PROJECT_VERSION</name></member>
+  </compound>
+  <compound refid="PlatformEsp32_8h" kind="file"><name>PlatformEsp32.h</name>
+  </compound>
+  <compound refid="PlatformEsp32_8cpp" kind="file"><name>PlatformEsp32.cpp</name>
+  </compound>
+  <compound refid="PlatformLinux_8h" kind="file"><name>PlatformLinux.h</name>
+  </compound>
+  <compound refid="PlatformLinux_8cpp" kind="file"><name>PlatformLinux.cpp</name>
+  </compound>
+  <compound refid="PlatformWindows_8h" kind="file"><name>PlatformWindows.h</name>
+  </compound>
+  <compound refid="PlatformWindows_8cpp" kind="file"><name>PlatformWindows.cpp</name>
+  </compound>
+  <compound refid="test__myclass_8cpp" kind="file"><name>test_myclass.cpp</name>
+    <member refid="test__myclass_8cpp_1a21a730c107ed988ebd7725a488443f24" kind="function"><name>TEST</name></member>
+    <member refid="test__myclass_8cpp_1ae7196867542a306344f350f1148074d3" kind="function"><name>TEST</name></member>
+    <member refid="test__myclass_8cpp_1a97aca3e319daf5247801563b7feb2cec" kind="function"><name>TEST</name></member>
+    <member refid="test__myclass_8cpp_1ab0b5394cfcacf796c4e032a59dad5f2b" kind="function"><name>TEST</name></member>
+    <member refid="test__myclass_8cpp_1af7a39343aefa1a26f22483ca5ea01c89" kind="function"><name>TEST</name></member>
+    <member refid="test__myclass_8cpp_1a1293372a978f48b01802eb30fd61d303" kind="function"><name>TEST</name></member>
+    <member refid="test__myclass_8cpp_1a6a92355e033bc266e4e17d59ddc7b921" kind="function"><name>TEST</name></member>
+    <member refid="test__myclass_8cpp_1acb69cb27bb08d7d1e6e303d6c28e4b2a" kind="function"><name>TEST</name></member>
+    <member refid="test__myclass_8cpp_1a9fe9eec738036bd8034f6b8dee25808d" kind="function"><name>TEST</name></member>
+    <member refid="test__myclass_8cpp_1a550a37bd042cda5abb051d5136a8d46e" kind="function"><name>TEST</name></member>
+    <member refid="test__myclass_8cpp_1a44935466f7a13b8f792f7fe5ef2d2a0c" kind="function"><name>TEST</name></member>
+    <member refid="test__myclass_8cpp_1aa92f70e6d554bfe3ac5a0147a94ef8a2" kind="function"><name>TEST</name></member>
+    <member refid="test__myclass_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_bdd9a5d540de89e9fe90efdfc6973a4f" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/common</name>
+  </compound>
+  <compound refid="dir_29d72d0e34289ca24b8e63162d20fa3e" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/platform/esp32</name>
+  </compound>
+  <compound refid="dir_11fbc4217d50ab21044e5ad6614aede5" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/common/include</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/include</name>
+  </compound>
+  <compound refid="dir_d4af2212de951413258b224058d6bf02" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/platform/esp32/include</name>
+  </compound>
+  <compound refid="dir_4fa8e684125d7310911828e863c32d8d" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/platform/linux/include</name>
+  </compound>
+  <compound refid="dir_62a9390e61e7762d32965a4686e5d3d2" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/platform/windows/include</name>
+  </compound>
+  <compound refid="dir_3a887a178c55a31a996f441b8ca49395" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/platform/linux</name>
+  </compound>
+  <compound refid="dir_121fc7ce66b883090cdd2aab56ca1101" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/common/include/Memory</name>
+  </compound>
+  <compound refid="dir_9c2590ae9974cbe0ceb285b04c57dafc" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/common/src/Memory</name>
+  </compound>
+  <compound refid="dir_c5a52a81292cf9a5167198f4f346d6d9" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/platform</name>
+  </compound>
+  <compound refid="dir_4e4d22e38ca4e2e8207825ee2d00bc54" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/common/src</name>
+  </compound>
+  <compound refid="dir_cdd4e5728887821d006a7dc50ae31a4f" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/platform/esp32/src</name>
+  </compound>
+  <compound refid="dir_fbf63402d0afdcab3555d734ecee717b" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/platform/linux/src</name>
+  </compound>
+  <compound refid="dir_a8db7e141cecc9d0aef55a9458e580b1" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/platform/windows/src</name>
+  </compound>
+  <compound refid="dir_59425e443f801f1f2fd8bbe4959a3ccf" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/tests</name>
+  </compound>
+  <compound refid="dir_e08283cc6d510b8aa112d4e505095a3a" kind="dir"><name>/home/michal/Documents/Projekty/mptf_core/platform/windows</name>
+  </compound>
+</doxygenindex>

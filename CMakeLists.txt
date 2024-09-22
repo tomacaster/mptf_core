@@ -17,6 +17,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 option(ENABLE_VALGRIND "Enable Valgrind for memory checking (Linux)" OFF)
 option(ENABLE_DR_MEMORY "Enable Dr. Memory for memory checking (Windows)" OFF)
 
+# Opcja budowania dokumentacji
+option(BUILD_DOC "Build the documentation with Doxygen" ON)
+
 # Konfiguracja plików przed resztą konfiguracji
 configure_file(
   ${CMAKE_CURRENT_SOURCE_DIR}/config/Version.h.in
@@ -54,3 +57,43 @@ install(FILES
     "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake"
     DESTINATION ${CONFIG_INSTALL_DIR}
 )
+
+# Integracja Doxygen
+find_package(Doxygen)
+
+if(DOXYGEN_FOUND AND BUILD_DOC)
+    message(STATUS "Doxygen znaleziony: ${DOXYGEN_EXECUTABLE}")
+
+    # Ustawienie katalogów wejściowych dla Doxygen jako przestrzeń oddzielona spacjami
+    set(DOXYGEN_INPUT_DIR_SPACE 
+        "${CMAKE_SOURCE_DIR}/include" 
+        "${CMAKE_SOURCE_DIR}/common" 
+        "${CMAKE_SOURCE_DIR}/platform" 
+        "${CMAKE_SOURCE_DIR}/tests"
+    )
+
+    # Zamiana średników na spacje
+    string(REPLACE ";" " " DOXYGEN_INPUT_DIR_SPACE_STR "${DOXYGEN_INPUT_DIR_SPACE}")
+
+    set(DOXYGEN_OUTPUT_DIR ${CMAKE_SOURCE_DIR}/docs)  # Dokumentacja w katalogu docs w głównym katalogu projektu
+
+    set(DOXYFILE_IN ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.in)
+    set(DOXYFILE_OUT ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile)
+
+    # Konfiguracja pliku Doxyfile
+    configure_file(${DOXYFILE_IN} ${DOXYFILE_OUT} @ONLY)
+
+    add_custom_target(doc
+        COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYFILE_OUT}
+        WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+        COMMENT "Generowanie dokumentacji Doxygen"
+        VERBATIM
+    )
+
+    # Opcjonalnie: Możesz usunąć poniższą linię, aby dokumentacja nie była budowana razem z głównym targetem
+    # add_dependencies(mptf_core doc)
+else()
+    if(BUILD_DOC)
+        message(WARNING "Doxygen nie został znaleziony. Dokumentacja nie zostanie wygenerowana.")
+    endif()
+endif()

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespaceMptf__core_1_1Platform_1_1Linux" kind="namespace" language="C++">
+    <compoundname>Mptf_core::Platform::Linux</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/michal/Documents/Projekty/mptf_core/platform/linux/include/PlatformLinux.h" line="3" column="1"/>
+  </compounddef>
+</doxygen>

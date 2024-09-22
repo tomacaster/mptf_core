@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="DataObject_8h" kind="file" language="C++">
+    <compoundname>DataObject.h</compoundname>
+    <includes local="no">memory</includes>
+    <includes local="no">cstddef</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="MemoryStream_8h" local="yes">/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h</includedby>
+    <includedby refid="DataObject_8cpp" local="yes">/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DataObject.cpp</includedby>
+    <includedby refid="test__myclass_8cpp" local="yes">/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DataObject.h</label>
+        <link refid="DataObject_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cstddef</label>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DataObject.h</label>
+        <link refid="DataObject_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h</label>
+        <link refid="MemoryStream_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DataObject.cpp</label>
+        <link refid="DataObject_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/src/Memory/MemoryStream.cpp</label>
+        <link refid="MemoryStream_8cpp"/>
+      </node>
+      <node id="5">
+        <label>/home/michal/Documents/Projekty/mptf_core/tests/test_myclass.cpp</label>
+        <link refid="test__myclass_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMemory_1_1DataObject" prot="public">Memory::DataObject</innerclass>
+    <innernamespace refid="namespaceMemory">Memory</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Memory/DataObject.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespaceMemory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceMemory" kindref="compound">Memory</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="classMemory_1_1DataObject" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMemory_1_1DataObject" kindref="compound">DataObject</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject_1a64ea371455d887bdd76cccd8eed4e5ae" kindref="member">DataObject</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject_1a64ea371455d887bdd76cccd8eed4e5ae" kindref="member">DataObject</ref>(std::shared_ptr&lt;std::vector&lt;char&gt;&gt;<sp/>dataPtr);</highlight></codeline>
+<codeline lineno="17" refid="classMemory_1_1DataObject_1a18339d55de998f72dba59b19b46fb5fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1DataObject_1a18339d55de998f72dba59b19b46fb5fd" kindref="member">~DataObject</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classMemory_1_1DataObject_1aff65a9f8fd1d0e245951de009a9dd93f" kindref="member">SetData</ref>(std::shared_ptr&lt;std::vector&lt;char&gt;&gt;<sp/>data);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;std::vector&lt;char&gt;&gt;<sp/><ref refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" kindref="member">GetData</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMemory_1_1DataObject_1a4182a39d861545728b8f9a61af7d3d41" kindref="member">Allocate</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMemory_1_1DataObject_1a64dff114f0db7909bed18eb08f622fdc" kindref="member">Resize</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>force<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" kindref="member">Size</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;std::vector&lt;char&gt;&gt;<sp/>_data;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DataObject.h"/>
+  </compounddef>
+</doxygen>

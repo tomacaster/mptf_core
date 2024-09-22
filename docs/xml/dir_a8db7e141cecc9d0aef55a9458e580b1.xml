@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_a8db7e141cecc9d0aef55a9458e580b1" kind="dir">
+    <compoundname>/home/michal/Documents/Projekty/mptf_core/platform/windows/src</compoundname>
+    <innerfile refid="PlatformWindows_8cpp">PlatformWindows.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/michal/Documents/Projekty/mptf_core/platform/windows/src/"/>
+  </compounddef>
+</doxygen>

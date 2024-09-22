@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_4e4d22e38ca4e2e8207825ee2d00bc54" kind="dir">
+    <compoundname>/home/michal/Documents/Projekty/mptf_core/common/src</compoundname>
+    <innerdir refid="dir_9c2590ae9974cbe0ceb285b04c57dafc">/home/michal/Documents/Projekty/mptf_core/common/src/Memory</innerdir>
+    <innerfile refid="Logger_8cpp">Logger.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/michal/Documents/Projekty/mptf_core/common/src/"/>
+  </compounddef>
+</doxygen>

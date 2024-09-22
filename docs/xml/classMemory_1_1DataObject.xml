@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classMemory_1_1DataObject" kind="class" language="C++" prot="public">
+    <compoundname>Memory::DataObject</compoundname>
+    <includes refid="DataObject_8h" local="no">DataObject.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMemory_1_1DataObject_1a3f0fe0ba0f5f03359db94943541d6058" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; std::vector&lt; char &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;std::vector&lt;char&gt; &gt; Memory::DataObject::_data</definition>
+        <argsstring></argsstring>
+        <name>_data</name>
+        <qualifiedname>Memory::DataObject::_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DataObject.h" line="26" column="25" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DataObject.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMemory_1_1DataObject_1a64ea371455d887bdd76cccd8eed4e5ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Memory::DataObject::DataObject</definition>
+        <argsstring>()</argsstring>
+        <name>DataObject</name>
+        <qualifiedname>Memory::DataObject::DataObject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DataObject.h" line="15" column="9" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DataObject.cpp" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DataObject_1a62e162d5de38cb2ca2b629e109565839" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Memory::DataObject::DataObject</definition>
+        <argsstring>(std::shared_ptr&lt; std::vector&lt; char &gt; &gt; dataPtr)</argsstring>
+        <name>DataObject</name>
+        <qualifiedname>Memory::DataObject::DataObject</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; std::vector&lt; char &gt; &gt;</type>
+          <declname>dataPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DataObject.h" line="16" column="9" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DataObject.cpp" bodystart="8" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DataObject_1a18339d55de998f72dba59b19b46fb5fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Memory::DataObject::~DataObject</definition>
+        <argsstring>()=default</argsstring>
+        <name>~DataObject</name>
+        <qualifiedname>Memory::DataObject::~DataObject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DataObject.h" line="17" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DataObject_1aff65a9f8fd1d0e245951de009a9dd93f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Memory::DataObject::SetData</definition>
+        <argsstring>(std::shared_ptr&lt; std::vector&lt; char &gt; &gt; data)</argsstring>
+        <name>SetData</name>
+        <qualifiedname>Memory::DataObject::SetData</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; std::vector&lt; char &gt; &gt;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DataObject.h" line="19" column="16" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DataObject.cpp" bodystart="11" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; std::vector&lt; char &gt; &gt;</type>
+        <definition>std::shared_ptr&lt; std::vector&lt; char &gt; &gt; Memory::DataObject::GetData</definition>
+        <argsstring>() const</argsstring>
+        <name>GetData</name>
+        <qualifiedname>Memory::DataObject::GetData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DataObject.h" line="20" column="25" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DataObject.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DataObject_1a4182a39d861545728b8f9a61af7d3d41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Memory::DataObject::Allocate</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>Allocate</name>
+        <qualifiedname>Memory::DataObject::Allocate</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DataObject.h" line="21" column="14" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DataObject.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DataObject_1a64dff114f0db7909bed18eb08f622fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Memory::DataObject::Resize</definition>
+        <argsstring>(size_t size, bool force=false)</argsstring>
+        <name>Resize</name>
+        <qualifiedname>Memory::DataObject::Resize</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DataObject.h" line="22" column="14" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DataObject.cpp" bodystart="27" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Memory::DataObject::Size</definition>
+        <argsstring>()</argsstring>
+        <name>Size</name>
+        <qualifiedname>Memory::DataObject::Size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DataObject.h" line="23" column="16" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/DataObject.cpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Basic data object for streams, etc. Based on vector&lt;char&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DataObject.h" line="12" column="5" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/DataObject.h" bodystart="13" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classMemory_1_1DataObject_1a3f0fe0ba0f5f03359db94943541d6058" prot="private" virt="non-virtual"><scope>Memory::DataObject</scope><name>_data</name></member>
+      <member refid="classMemory_1_1DataObject_1a4182a39d861545728b8f9a61af7d3d41" prot="public" virt="non-virtual"><scope>Memory::DataObject</scope><name>Allocate</name></member>
+      <member refid="classMemory_1_1DataObject_1a64ea371455d887bdd76cccd8eed4e5ae" prot="public" virt="non-virtual"><scope>Memory::DataObject</scope><name>DataObject</name></member>
+      <member refid="classMemory_1_1DataObject_1a62e162d5de38cb2ca2b629e109565839" prot="public" virt="non-virtual"><scope>Memory::DataObject</scope><name>DataObject</name></member>
+      <member refid="classMemory_1_1DataObject_1a3dc74c0deb0b1482c7b020e607545cdd" prot="public" virt="non-virtual"><scope>Memory::DataObject</scope><name>GetData</name></member>
+      <member refid="classMemory_1_1DataObject_1a64dff114f0db7909bed18eb08f622fdc" prot="public" virt="non-virtual"><scope>Memory::DataObject</scope><name>Resize</name></member>
+      <member refid="classMemory_1_1DataObject_1aff65a9f8fd1d0e245951de009a9dd93f" prot="public" virt="non-virtual"><scope>Memory::DataObject</scope><name>SetData</name></member>
+      <member refid="classMemory_1_1DataObject_1aa1131871e718afce90de2ff0a58c2167" prot="public" virt="non-virtual"><scope>Memory::DataObject</scope><name>Size</name></member>
+      <member refid="classMemory_1_1DataObject_1a18339d55de998f72dba59b19b46fb5fd" prot="public" virt="non-virtual"><scope>Memory::DataObject</scope><name>~DataObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

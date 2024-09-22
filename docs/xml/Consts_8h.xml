@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Consts_8h" kind="file" language="C++">
+    <compoundname>Consts.h</compoundname>
+    <includedby refid="Storage_8cpp" local="yes">/home/michal/Documents/Projekty/mptf_core/common/src/Memory/Storage.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/include/Consts.h</label>
+        <link refid="Consts_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/src/Memory/Storage.cpp</label>
+        <link refid="Storage_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceConsts">Consts</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespaceConsts" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceConsts" kindref="compound">Consts</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="namespaceConsts_1aa9f8a26f69994701439cb956cceded8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="namespaceConsts_1aa9f8a26f69994701439cb956cceded8b" kindref="member">APP_DIR_ENV</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\%GBARIC_HOME\%&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Consts.h"/>
+  </compounddef>
+</doxygen>

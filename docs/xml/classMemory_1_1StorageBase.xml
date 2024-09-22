@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classMemory_1_1StorageBase" kind="class" language="C++" prot="public">
+    <compoundname>Memory::StorageBase</compoundname>
+    <basecompoundref refid="classMemory_1_1FileManagerBase" prot="private" virt="non-virtual">Memory::FileManagerBase</basecompoundref>
+    <includes refid="Storage_8h" local="no">Storage.h</includes>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classMemory_1_1StorageBase_1a121e4ae15c4d699ac9283c92193b948a" prot="private" static="yes" mutable="no">
+        <type>std::shared_ptr&lt; spdlog::logger &gt;</type>
+        <definition>std::shared_ptr&lt; spdlog::logger &gt; StorageBase::_logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <qualifiedname>Memory::StorageBase::_logger</qualifiedname>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h" line="17" column="36" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMemory_1_1StorageBase_1a089798cb12aeba366f692569b3a75ccf" prot="private" static="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string StorageBase::_homeDir</definition>
+        <argsstring></argsstring>
+        <name>_homeDir</name>
+        <qualifiedname>Memory::StorageBase::_homeDir</qualifiedname>
+        <initializer>{ &quot;&quot; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h" line="18" column="32" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMemory_1_1StorageBase_1a8eec253c6d0ca461dab5633120370e36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>StorageBase::StorageBase</definition>
+        <argsstring>()</argsstring>
+        <name>StorageBase</name>
+        <qualifiedname>Memory::StorageBase::StorageBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h" line="12" column="13" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/Storage.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1StorageBase_1afcc2a926a7db11ff7fc0f825c73b4bdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Memory::StorageBase::CleanStorage</definition>
+        <argsstring>(bool force)</argsstring>
+        <name>CleanStorage</name>
+        <qualifiedname>Memory::StorageBase::CleanStorage</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h" line="14" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1StorageBase_1a97013b8b588ad3c62845ab7b3cd5c9c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string &amp;</type>
+        <definition>std::string &amp; StorageBase::GetHomedir</definition>
+        <argsstring>()</argsstring>
+        <name>GetHomedir</name>
+        <qualifiedname>Memory::StorageBase::GetHomedir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h" line="15" column="25" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/Storage.cpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMemory_1_1StorageBase_1a51369d9b8df6900d7addc2e0eba80898" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string &amp;</type>
+        <definition>std::string &amp; StorageBase::InitStorage</definition>
+        <argsstring>(std::string appName)</argsstring>
+        <name>InitStorage</name>
+        <qualifiedname>Memory::StorageBase::InitStorage</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>appName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h" line="13" column="32" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/Storage.cpp" bodystart="20" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classMemory_1_1StorageBase_1ab413b9fd2999d136007cfd1f0b941b97" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StorageBase::CreateAppFolders</definition>
+        <argsstring>()</argsstring>
+        <name>CreateAppFolders</name>
+        <qualifiedname>Memory::StorageBase::CreateAppFolders</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h" line="19" column="25" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/Storage.cpp" bodystart="69" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Memory::FileManagerBase</label>
+        <link refid="classMemory_1_1FileManagerBase"/>
+      </node>
+      <node id="1">
+        <label>Memory::StorageBase</label>
+        <link refid="classMemory_1_1StorageBase"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Memory::FileManagerBase</label>
+        <link refid="classMemory_1_1FileManagerBase"/>
+      </node>
+      <node id="1">
+        <label>Memory::StorageBase</label>
+        <link refid="classMemory_1_1StorageBase"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h" line="9" column="5" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h" bodystart="10" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classMemory_1_1StorageBase_1a089798cb12aeba366f692569b3a75ccf" prot="private" virt="non-virtual"><scope>Memory::StorageBase</scope><name>_homeDir</name></member>
+      <member refid="classMemory_1_1StorageBase_1a121e4ae15c4d699ac9283c92193b948a" prot="private" virt="non-virtual"><scope>Memory::StorageBase</scope><name>_logger</name></member>
+      <member refid="classMemory_1_1StorageBase_1afcc2a926a7db11ff7fc0f825c73b4bdb" prot="public" virt="non-virtual"><scope>Memory::StorageBase</scope><name>CleanStorage</name></member>
+      <member refid="classMemory_1_1StorageBase_1ab413b9fd2999d136007cfd1f0b941b97" prot="private" virt="non-virtual"><scope>Memory::StorageBase</scope><name>CreateAppFolders</name></member>
+      <member refid="classMemory_1_1StorageBase_1a97013b8b588ad3c62845ab7b3cd5c9c5" prot="public" virt="non-virtual"><scope>Memory::StorageBase</scope><name>GetHomedir</name></member>
+      <member refid="classMemory_1_1StorageBase_1a51369d9b8df6900d7addc2e0eba80898" prot="public" virt="non-virtual"><scope>Memory::StorageBase</scope><name>InitStorage</name></member>
+      <member refid="classMemory_1_1StorageBase_1a8eec253c6d0ca461dab5633120370e36" prot="public" virt="non-virtual"><scope>Memory::StorageBase</scope><name>StorageBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

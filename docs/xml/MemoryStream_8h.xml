@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="MemoryStream_8h" kind="file" language="C++">
+    <compoundname>MemoryStream.h</compoundname>
+    <includes local="no">thread</includes>
+    <includes local="no">shared_mutex</includes>
+    <includes local="no">cstddef</includes>
+    <includes local="no">cstdint</includes>
+    <includes refid="DataObject_8h" local="yes">DataObject.h</includes>
+    <includedby refid="MemoryStream_8cpp" local="yes">/home/michal/Documents/Projekty/mptf_core/common/src/Memory/MemoryStream.cpp</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>DataObject.h</label>
+        <link refid="DataObject_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h</label>
+        <link refid="MemoryStream_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cstddef</label>
+      </node>
+      <node id="5">
+        <label>cstdint</label>
+      </node>
+      <node id="7">
+        <label>memory</label>
+      </node>
+      <node id="3">
+        <label>shared_mutex</label>
+      </node>
+      <node id="2">
+        <label>thread</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h</label>
+        <link refid="MemoryStream_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/src/Memory/MemoryStream.cpp</label>
+        <link refid="MemoryStream_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMemory_1_1MemoryStream" prot="public">Memory::MemoryStream</innerclass>
+    <innernamespace refid="namespaceMemory">Memory</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;shared_mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DataObject_8h" kindref="compound">DataObject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceMemory" kindref="compound">Memory</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="classMemory_1_1MemoryStream" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMemory_1_1MemoryStream" kindref="compound">MemoryStream</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1MemoryStream" kindref="compound">MemoryStream</ref>(std::shared_ptr&lt;Memory::DataObject&gt;<sp/>data);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMemory_1_1MemoryStream_1a4069b894ea180800ea60420e51c3588f" kindref="member">Open</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**datap,<sp/>uint64_t<sp/>*sizep);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ptrdiff_t<sp/><ref refid="classMemory_1_1MemoryStream_1a7a8444f9deb96308d4b7afa66481959f" kindref="member">Read</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMemory_1_1MemoryStream_1a1b09c31281f40a6ef78a78c991f9f4ee" kindref="member">Seek</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque,<sp/>uint64_t<sp/>offset);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMemory_1_1MemoryStream_1abd08779d9b828a4366f016c75bea6b6e" kindref="member">Close</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_mutex<sp/>_mutex;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;DataObject&gt;<sp/>_memory;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h"/>
+  </compounddef>
+</doxygen>

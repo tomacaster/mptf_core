@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_121fc7ce66b883090cdd2aab56ca1101" kind="dir">
+    <compoundname>/home/michal/Documents/Projekty/mptf_core/common/include/Memory</compoundname>
+    <innerfile refid="DataObject_8h">DataObject.h</innerfile>
+    <innerfile refid="DBEngineBase_8h">DBEngineBase.h</innerfile>
+    <innerfile refid="FileManagerBase_8h">FileManagerBase.h</innerfile>
+    <innerfile refid="MemoryStream_8h">MemoryStream.h</innerfile>
+    <innerfile refid="Storage_8h">Storage.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/"/>
+  </compounddef>
+</doxygen>

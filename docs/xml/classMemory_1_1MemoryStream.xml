@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classMemory_1_1MemoryStream" kind="class" language="C++" prot="public">
+    <compoundname>Memory::MemoryStream</compoundname>
+    <includes refid="MemoryStream_8h" local="no">MemoryStream.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMemory_1_1MemoryStream_1ac6c1860243df615288b324a5eb258974" prot="private" static="no" mutable="no">
+        <type>std::shared_mutex</type>
+        <definition>std::shared_mutex Memory::MemoryStream::_mutex</definition>
+        <argsstring></argsstring>
+        <name>_mutex</name>
+        <qualifiedname>Memory::MemoryStream::_mutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h" line="21" column="31" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMemory_1_1MemoryStream_1ab5df6ad7b5a1236ec7a84f64547bc242" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classMemory_1_1DataObject" kindref="compound">DataObject</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;DataObject&gt; Memory::MemoryStream::_memory</definition>
+        <argsstring></argsstring>
+        <name>_memory</name>
+        <qualifiedname>Memory::MemoryStream::_memory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h" line="22" column="29" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMemory_1_1MemoryStream_1a3643391afae1356fb89532ec6c4713df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MemoryStream::MemoryStream</definition>
+        <argsstring>(std::shared_ptr&lt; Memory::DataObject &gt; data)</argsstring>
+        <name>MemoryStream</name>
+        <qualifiedname>Memory::MemoryStream::MemoryStream</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classMemory_1_1DataObject" kindref="compound">Memory::DataObject</ref> &gt;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h" line="15" column="13" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/MemoryStream.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1MemoryStream_1a4069b894ea180800ea60420e51c3588f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MemoryStream::Open</definition>
+        <argsstring>(void *opaque, void **datap, uint64_t *sizep)</argsstring>
+        <name>Open</name>
+        <qualifiedname>Memory::MemoryStream::Open</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>datap</declname>
+        </param>
+        <param>
+          <type>uint64_t *</type>
+          <declname>sizep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h" line="16" column="17" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/MemoryStream.cpp" bodystart="11" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1MemoryStream_1a7a8444f9deb96308d4b7afa66481959f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ptrdiff_t</type>
+        <definition>ptrdiff_t MemoryStream::Read</definition>
+        <argsstring>(void *opaque, unsigned char *buf, size_t len)</argsstring>
+        <name>Read</name>
+        <qualifiedname>Memory::MemoryStream::Read</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h" line="17" column="23" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/MemoryStream.cpp" bodystart="31" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1MemoryStream_1a1b09c31281f40a6ef78a78c991f9f4ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MemoryStream::Seek</definition>
+        <argsstring>(void *opaque, uint64_t offset)</argsstring>
+        <name>Seek</name>
+        <qualifiedname>Memory::MemoryStream::Seek</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h" line="18" column="17" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/MemoryStream.cpp" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classMemory_1_1MemoryStream_1abd08779d9b828a4366f016c75bea6b6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MemoryStream::Close</definition>
+        <argsstring>(void *opaque)</argsstring>
+        <name>Close</name>
+        <qualifiedname>Memory::MemoryStream::Close</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h" line="19" column="18" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/src/Memory/MemoryStream.cpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class for memory stream impolemented to be compatible with VLC imem. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h" line="12" column="5" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/MemoryStream.h" bodystart="13" bodyend="23"/>
+    <listofallmembers>
+      <member refid="classMemory_1_1MemoryStream_1ab5df6ad7b5a1236ec7a84f64547bc242" prot="private" virt="non-virtual"><scope>Memory::MemoryStream</scope><name>_memory</name></member>
+      <member refid="classMemory_1_1MemoryStream_1ac6c1860243df615288b324a5eb258974" prot="private" virt="non-virtual"><scope>Memory::MemoryStream</scope><name>_mutex</name></member>
+      <member refid="classMemory_1_1MemoryStream_1abd08779d9b828a4366f016c75bea6b6e" prot="public" virt="non-virtual"><scope>Memory::MemoryStream</scope><name>Close</name></member>
+      <member refid="classMemory_1_1MemoryStream_1a3643391afae1356fb89532ec6c4713df" prot="public" virt="non-virtual"><scope>Memory::MemoryStream</scope><name>MemoryStream</name></member>
+      <member refid="classMemory_1_1MemoryStream_1a4069b894ea180800ea60420e51c3588f" prot="public" virt="non-virtual"><scope>Memory::MemoryStream</scope><name>Open</name></member>
+      <member refid="classMemory_1_1MemoryStream_1a7a8444f9deb96308d4b7afa66481959f" prot="public" virt="non-virtual"><scope>Memory::MemoryStream</scope><name>Read</name></member>
+      <member refid="classMemory_1_1MemoryStream_1a1b09c31281f40a6ef78a78c991f9f4ee" prot="public" virt="non-virtual"><scope>Memory::MemoryStream</scope><name>Seek</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_4fa8e684125d7310911828e863c32d8d" kind="dir">
+    <compoundname>/home/michal/Documents/Projekty/mptf_core/platform/linux/include</compoundname>
+    <innerfile refid="PlatformLinux_8h">PlatformLinux.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/michal/Documents/Projekty/mptf_core/platform/linux/include/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_c5a52a81292cf9a5167198f4f346d6d9" kind="dir">
+    <compoundname>/home/michal/Documents/Projekty/mptf_core/platform</compoundname>
+    <innerdir refid="dir_29d72d0e34289ca24b8e63162d20fa3e">/home/michal/Documents/Projekty/mptf_core/platform/esp32</innerdir>
+    <innerdir refid="dir_3a887a178c55a31a996f441b8ca49395">/home/michal/Documents/Projekty/mptf_core/platform/linux</innerdir>
+    <innerdir refid="dir_e08283cc6d510b8aa112d4e505095a3a">/home/michal/Documents/Projekty/mptf_core/platform/windows</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/michal/Documents/Projekty/mptf_core/platform/"/>
+  </compounddef>
+</doxygen>

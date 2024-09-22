@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Storage_8h" kind="file" language="C++">
+    <compoundname>Storage.h</compoundname>
+    <includes refid="FileManagerBase_8h" local="yes">FileManagerBase.h</includes>
+    <includes local="no">string</includes>
+    <includes refid="Logger_8h" local="yes">Logger.h</includes>
+    <includedby refid="Storage_8cpp" local="yes">/home/michal/Documents/Projekty/mptf_core/common/src/Memory/Storage.cpp</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>Logger.h</label>
+        <link refid="Logger_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FileManagerBase.h</label>
+        <link refid="FileManagerBase_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h</label>
+        <link refid="Storage_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>filesystem</label>
+      </node>
+      <node id="4">
+        <label>fstream</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>ostream</label>
+      </node>
+      <node id="7">
+        <label>shared_mutex</label>
+      </node>
+      <node id="10">
+        <label>spdlog/sinks/basic_file_sink.h</label>
+      </node>
+      <node id="9">
+        <label>spdlog/sinks/stdout_color_sinks.h</label>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h</label>
+        <link refid="Storage_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/src/Memory/Storage.cpp</label>
+        <link refid="Storage_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMemory_1_1StorageBase" prot="public">Memory::StorageBase</innerclass>
+    <innernamespace refid="namespaceMemory">Memory</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FileManagerBase_8h" kindref="compound">FileManagerBase.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Logger_8h" kindref="compound">Logger.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceMemory" kindref="compound">Memory</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="classMemory_1_1StorageBase" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMemory_1_1StorageBase" kindref="compound">StorageBase</ref><sp/>:<sp/><ref refid="classMemory_1_1FileManagerBase" kindref="compound">FileManagerBase</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1StorageBase_1a8eec253c6d0ca461dab5633120370e36" kindref="member">StorageBase</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="classMemory_1_1StorageBase_1a51369d9b8df6900d7addc2e0eba80898" kindref="member">InitStorage</ref>(std::string<sp/>appName);</highlight></codeline>
+<codeline lineno="14" refid="classMemory_1_1StorageBase_1afcc2a926a7db11ff7fc0f825c73b4bdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMemory_1_1StorageBase_1afcc2a926a7db11ff7fc0f825c73b4bdb" kindref="member">CleanStorage</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>force);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string&amp;<sp/><ref refid="classMemory_1_1StorageBase_1a97013b8b588ad3c62845ab7b3cd5c9c5" kindref="member">GetHomedir</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;spdlog::logger&gt;<sp/>_logger;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/>_homeDir;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CreateAppFolders();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h"/>
+  </compounddef>
+</doxygen>

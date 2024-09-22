@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="PlatformEsp32_8h" kind="file" language="C++">
+    <compoundname>PlatformEsp32.h</compoundname>
+    <includedby refid="PlatformEsp32_8cpp" local="yes">/home/michal/Documents/Projekty/mptf_core/platform/esp32/src/PlatformEsp32.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/michal/Documents/Projekty/mptf_core/platform/esp32/include/PlatformEsp32.h</label>
+        <link refid="PlatformEsp32_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/michal/Documents/Projekty/mptf_core/platform/esp32/src/PlatformEsp32.cpp</label>
+        <link refid="PlatformEsp32_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceMptf__core">Mptf_core</innernamespace>
+    <innernamespace refid="namespaceMptf__core_1_1Platform">Mptf_core::Platform</innernamespace>
+    <innernamespace refid="namespaceMptf__core_1_1Platform_1_1Esp32">Mptf_core::Platform::Esp32</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespaceMptf__core" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceMptf__core_1_1Platform_1_1Esp32" kindref="compound">Mptf_core::Platform::Esp32</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/michal/Documents/Projekty/mptf_core/platform/esp32/include/PlatformEsp32.h"/>
+  </compounddef>
+</doxygen>

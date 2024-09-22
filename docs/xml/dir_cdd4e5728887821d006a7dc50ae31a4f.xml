@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_cdd4e5728887821d006a7dc50ae31a4f" kind="dir">
+    <compoundname>/home/michal/Documents/Projekty/mptf_core/platform/esp32/src</compoundname>
+    <innerfile refid="PlatformEsp32_8cpp">PlatformEsp32.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/michal/Documents/Projekty/mptf_core/platform/esp32/src/"/>
+  </compounddef>
+</doxygen>

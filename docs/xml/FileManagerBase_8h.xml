@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="FileManagerBase_8h" kind="file" language="C++">
+    <compoundname>FileManagerBase.h</compoundname>
+    <includes local="no">filesystem</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">ostream</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">shared_mutex</includes>
+    <includes refid="Logger_8h" local="yes">Logger.h</includes>
+    <includedby refid="Storage_8h" local="yes">/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h</includedby>
+    <includedby refid="FileManagerBase_8cpp" local="yes">/home/michal/Documents/Projekty/mptf_core/common/src/Memory/FileManagerBase.cpp</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>Logger.h</label>
+        <link refid="Logger_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/include/Memory/FileManagerBase.h</label>
+        <link refid="FileManagerBase_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>filesystem</label>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>ostream</label>
+      </node>
+      <node id="6">
+        <label>shared_mutex</label>
+      </node>
+      <node id="9">
+        <label>spdlog/sinks/basic_file_sink.h</label>
+      </node>
+      <node id="8">
+        <label>spdlog/sinks/stdout_color_sinks.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/include/Memory/FileManagerBase.h</label>
+        <link refid="FileManagerBase_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/include/Memory/Storage.h</label>
+        <link refid="Storage_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/src/Memory/FileManagerBase.cpp</label>
+        <link refid="FileManagerBase_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/michal/Documents/Projekty/mptf_core/common/src/Memory/Storage.cpp</label>
+        <link refid="Storage_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMemory_1_1FileManagerBase" prot="public">Memory::FileManagerBase</innerclass>
+    <innernamespace refid="namespaceMemory">Memory</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;filesystem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;shared_mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Logger_8h" kindref="compound">Logger.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceMemory" kindref="compound">Memory</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">fs<sp/>=<sp/>std::filesystem;</highlight></codeline>
+<codeline lineno="13" refid="classMemory_1_1FileManagerBase" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMemory_1_1FileManagerBase" kindref="compound">FileManagerBase</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMemory_1_1FileManagerBase_1a2ae1d61126b6070e0a5e85a3f3140746" kindref="member">FileManagerBase</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;std::ifstream&gt;<sp/><ref refid="classMemory_1_1FileManagerBase_1ae7b9635e88390651685d5e2182c3ede7" kindref="member">OpenFile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>fs::path&amp;<sp/>path,<sp/>std::ios_base::openmode<sp/>mode,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>createIf<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMemory_1_1FileManagerBase_1ad6076133627db5d6f80e12c99d42d959" kindref="member">SaveFile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>fs::path&amp;<sp/>path,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>overwrite<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMemory_1_1FileManagerBase_1a84454564898faa2afb52a96be4174fee" kindref="member">CreateFile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>fs::path&amp;<sp/>path,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>overwrite<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMemory_1_1FileManagerBase_1a1539080f7de19b898a56c854d35ecbbb" kindref="member">CreateDirectory</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>fs::path&amp;<sp/>path);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;spdlog::logger&gt;<sp/>_logger;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_mutex<sp/>_mutex;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Memory/FileManagerBase.h"/>
+  </compounddef>
+</doxygen>

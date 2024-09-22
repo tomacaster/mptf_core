@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="PlatformWindows_8cpp" kind="file" language="C++">
+    <compoundname>PlatformWindows.cpp</compoundname>
+    <includes refid="PlatformWindows_8h" local="yes">PlatformWindows.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>PlatformWindows.h</label>
+        <link refid="PlatformWindows_8h"/>
+      </node>
+      <node id="1">
+        <label>/home/michal/Documents/Projekty/mptf_core/platform/windows/src/PlatformWindows.cpp</label>
+        <link refid="PlatformWindows_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceMptf__core">Mptf_core</innernamespace>
+    <innernamespace refid="namespaceMptf__core_1_1Platform">Mptf_core::Platform</innernamespace>
+    <innernamespace refid="namespaceMptf__core_1_1Platform_1_1Windows">Mptf_core::Platform::Windows</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="PlatformWindows_8h" kindref="compound">PlatformWindows.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceMptf__core_1_1Platform_1_1Windows" kindref="compound">Mptf_core::Platform::Windows</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/michal/Documents/Projekty/mptf_core/platform/windows/src/PlatformWindows.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespaceConsts" kind="namespace" language="C++">
+    <compoundname>Consts</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceConsts_1aa9f8a26f69994701439cb956cceded8b" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* Consts::APP_DIR_ENV</definition>
+        <argsstring></argsstring>
+        <name>APP_DIR_ENV</name>
+        <qualifiedname>Consts::APP_DIR_ENV</qualifiedname>
+        <initializer>= &quot;\%GBARIC_HOME\%&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Consts.h" line="5" column="30" bodyfile="/home/michal/Documents/Projekty/mptf_core/common/include/Consts.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/michal/Documents/Projekty/mptf_core/common/include/Consts.h" line="3" column="1"/>
+  </compounddef>
+</doxygen>
