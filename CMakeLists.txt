@@ -26,8 +26,9 @@ configure_file(
   ${CMAKE_CURRENT_SOURCE_DIR}/include/Version.h
 )
 
-# Configure README.md
+# Configure README.md and CHANGELOG.md
 configure_file(${CMAKE_SOURCE_DIR}/README.md.in ${CMAKE_BINARY_DIR}/README.md @ONLY)
+configure_file(${CMAKE_SOURCE_DIR}/CHANGELOG.md.in ${CMAKE_BINARY_DIR}/CHANGELOG.md @ONLY)
 
 # Add subdirectories
 add_subdirectory(common)
@@ -72,20 +73,23 @@ if(DOXYGEN_FOUND AND BUILD_DOC)
     # Configure Doxyfile
     configure_file(${DOXYFILE_IN} ${DOXYFILE_OUT} @ONLY)
 
-    # Configure README.md based on CHANGELOG.md
+    # Configure README.md and CHANGELOG.md based on templates
     add_custom_target(update_readme
         COMMAND ${CMAKE_COMMAND} -E env python3 ${CMAKE_SOURCE_DIR}/scripts/update_readme.py ${CMAKE_SOURCE_DIR}/README.md.in ${CMAKE_BINARY_DIR}/README.md ${CMAKE_SOURCE_DIR}/CHANGELOG.md
-        DEPENDS ${CMAKE_BINARY_DIR}/README.md ${CMAKE_SOURCE_DIR}/CHANGELOG.md
-        COMMENT "Updating README.md based on CHANGELOG.md"
+        DEPENDS ${CMAKE_BINARY_DIR}/README.md ${CMAKE_BINARY_DIR}/CHANGELOG.md
+        COMMENT "Updating README.md and generating CHANGELOG.md"
     )
 
-    # Copy README.md to the source directory
-    add_custom_target(copy_readme
+    # Copy README.md and CHANGELOG.md to the source directory
+    add_custom_target(copy_docs
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
             ${CMAKE_BINARY_DIR}/README.md
             ${CMAKE_SOURCE_DIR}/README.md
-        DEPENDS ${CMAKE_BINARY_DIR}/README.md
-        COMMENT "Copying generated README.md to the source directory"
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            ${CMAKE_BINARY_DIR}/CHANGELOG.md
+            ${CMAKE_SOURCE_DIR}/CHANGELOG.md
+        DEPENDS ${CMAKE_BINARY_DIR}/README.md ${CMAKE_BINARY_DIR}/CHANGELOG.md
+        COMMENT "Copying generated README.md and CHANGELOG.md to the source directory"
     )
 
     # Doxygen integration
@@ -96,8 +100,8 @@ if(DOXYGEN_FOUND AND BUILD_DOC)
         VERBATIM
     )
 
-    # Set dependencies: doc depends on update_readme and copy_readme
-    add_dependencies(doc update_readme copy_readme)
+    # Set dependencies: doc depends on update_readme and copy_docs
+    add_dependencies(doc update_readme copy_docs)
 
 else()
     if(BUILD_DOC)

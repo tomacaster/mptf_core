@@ -2,10 +2,9 @@
 
 ## Version @PROJECT_VERSION@
 
-### Details:
-- Major: @PROJECT_VERSION_MAJOR@
-- Minor: @PROJECT_VERSION_MINOR@
-- Patch: @PROJECT_VERSION_PATCH@
+Welcome to the @PROJECT_NAME@ project. This project aims to...
 
-## Changelog:
-Initial commit with complete project structure
+## Features:
+- Feature 1
+- Feature 2
+- Feature 3
