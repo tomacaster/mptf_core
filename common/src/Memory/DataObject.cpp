@@ -1,12 +1,8 @@
 // Memory/DataObject.cpp
 #include "Memory/DataObject.h"
-#include "DataObject.h"
 
 namespace Memory
 {
-    DataObject::DataObject() {}
-
-
     DataObject::DataObject(const std::vector<char> &dataPtr) : data_(dataPtr)
     {
     }
@@ -23,7 +19,7 @@ namespace Memory
 
     std::shared_ptr<std::vector<char>> DataObject::GetData() const
     {
-        return std::make_shared<DataObject> data_;
+        return std::make_shared<std::vector<char>>(data_);
     }
 
     bool DataObject::Allocate(size_t size) 

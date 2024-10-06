@@ -3,10 +3,10 @@
 #include <memory>
 #include <string_view>
 
+#include "Memory/DataObject.h"
+
 namespace Memory::Storage
 {
-    class DataObject;
-
     class IFileSystem
     {
     public:

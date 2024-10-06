@@ -1,17 +1,17 @@
 #pragma once
-`
+
 #include <string_view>
 
 #include <spdlog/logger.h>
 
+#include "IFileSystem.h"
 #include "FileSystemCommon.h"
+
 #include "Logger.h"
-#include "DataObject.h"
+#include "Memory/DataObject.h"
 
 namespace Memory::Storage
 {
-    class DataObject;
-
     /// @brief Helper class based on std::filesystem
     class FileSystemCommon : public IFileSystem
     {
