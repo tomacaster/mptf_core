@@ -39,6 +39,33 @@ add_subdirectory(common)
 add_subdirectory(platform)
 add_subdirectory(tests)
 
+file(GLOB_RECURSE MPTF_CORE_SOURCES
+    "${CMAKE_CURRENT_SOURCE_DIR}/common/src/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/platform/src/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/tests/src/*.cpp"
+)
+
+# Dodaj diagnostykę, aby upewnić się, że pliki źródłowe są znalezione
+message(STATUS "MPTF_CORE_SOURCES: ${MPTF_CORE_SOURCES}")
+
+if(NOT MPTF_CORE_SOURCES)
+    message(FATAL_ERROR "No source files found for mptf_core")
+endif()
+
+# Definiowanie biblioteki mptf_core
+add_library(mptf_core STATIC ${MPTF_CORE_SOURCES})
+
+# Ustawienie include directories dla biblioteki
+target_include_directories(mptf_core PUBLIC 
+    ${CMAKE_CURRENT_SOURCE_DIR}/common/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/platform/include
+    # Dodaj inne katalogi include, jeśli istnieją
+)
+
+# Ustawienie wymagań C++ dla biblioteki
+target_compile_features(mptf_core PUBLIC cxx_std_20)
+
+# Definiowanie aliasu targetu
 add_library(mptf_core::mptf_core ALIAS mptf_core)
 
 # Package configuration and installation
