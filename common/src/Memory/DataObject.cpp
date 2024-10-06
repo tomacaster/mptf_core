@@ -1,49 +1,67 @@
 // Memory/DataObject.cpp
 #include "Memory/DataObject.h"
+#include "DataObject.h"
 
 namespace Memory
 {
-    DataObject::DataObject() : _data(std::make_shared<std::vector<char>>()) {}
+    DataObject::DataObject() {}
 
-    DataObject::DataObject(std::shared_ptr<std::vector<char>> dataPtr)
-        : _data(std::move(dataPtr)) { }
 
-    size_t DataObject::SetData(std::shared_ptr<std::vector<char>> data)
+    DataObject::DataObject(const std::vector<char> &dataPtr) : data_(dataPtr)
     {
-        _data = std::move(data);
-        return _data ? _data->size() : 0;
+    }
+
+    DataObject::DataObject(std::vector<char> &&dataPtr) : data_(std::move(dataPtr))
+    {
+    }
+
+    size_t DataObject::SetData(const std::vector<char>& data)
+    {
+        data_ = std::move(data);
+        return data_.size();
     }
 
     std::shared_ptr<std::vector<char>> DataObject::GetData() const
     {
-        return _data;
+        return std::make_shared<DataObject> data_;
     }
 
-    void DataObject::Allocate(size_t size)
+    bool DataObject::Allocate(size_t size) 
     {
-        _data = std::make_shared<std::vector<char>>(size);
+        if (data_.empty()) 
+        {
+            try 
+            {
+                data_.reserve(size);
+
+                return true;
+            } catch (const std::bad_alloc&) 
+            {
+                return false;
+            }
+        }
+        return false;
     }
 
     bool DataObject::Resize(size_t size, bool force)
     {
-        if (!_data)
+        if (force || data_.size() != size) 
         {
-            _data = std::make_shared<std::vector<char>>();
+            try 
+            {
+                data_.resize(size);
+                
+                return true;
+            } catch (const std::bad_alloc&) 
+            {
+                return false;
+            }
         }
-
-        if(size <= _data->size() && !force)
-        {
-            return false;
-        }
-        else
-        {
-            _data->resize(size);
-            return true;
-        }
+        return true;
     }
 
-    size_t DataObject::Size()
+    size_t DataObject::Size() const
     {   
-        return _data ? _data->size() : 0;
+        return data_.size();
     }
 }

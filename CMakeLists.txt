@@ -39,6 +39,8 @@ add_subdirectory(common)
 add_subdirectory(platform)
 add_subdirectory(tests)
 
+add_library(mptf_core::mptf_core ALIAS mptf_core)
+
 # Package configuration and installation
 include(CMakePackageConfigHelpers)
 write_basic_package_version_file(
