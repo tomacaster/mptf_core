@@ -14,7 +14,7 @@ namespace Memory::Storage
     {
     }
 
-    std::shared_ptr<DataObject> FileSystemCommon::Open(std::string_view path)
+    std::shared_ptr<DataObject> FileSystemCommon::Open(std::string_view path, bool createIf)
     {
         DataObject data;
 
