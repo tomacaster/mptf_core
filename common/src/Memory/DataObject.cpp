@@ -10,7 +10,7 @@ namespace Memory
     DataObject::DataObject(std::vector<char> &&dataPtr) : data_(std::move(dataPtr))
     {
     }
-
+    
     size_t DataObject::SetData(const std::vector<char>& data)
     {
         data_ = std::move(data);
