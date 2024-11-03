@@ -1,5 +1,6 @@
 #pragma once
 
+#include <string>
 #include <string_view>
 
 #include <spdlog/logger.h>
@@ -20,10 +21,13 @@ namespace Memory::Storage
 
             std::shared_ptr<DataObject> Open();
             bool Write(const std::shared_ptr<DataObject>& data);
+            std::string_view GetPath() const;
         private:
             std::shared_ptr<spdlog::logger> logger_;
+            std::string filePath_;
             FileSystemCommon fileSystem_;
             struct FilesystemImpl;
             DataObject object_;
+
     };
 }

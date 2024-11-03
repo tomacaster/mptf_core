@@ -12,7 +12,7 @@ namespace Memory::Storage
         fs::path filePath;
     } FilesystemImpl;
     
-    FileCommon::FileCommon(std::string_view path)
+    FileCommon::FileCommon(std::string_view path) : filePath_(path)
     {
         object_ = fileSystem_.Open(path, true);
         if ( object_.Size() == 0)
@@ -24,7 +24,13 @@ namespace Memory::Storage
     FileCommon::~FileCommon()
     {
     }
-    std::shared_ptr<DataObject> Memory::Storage::FileCommon::Open()
+
+    std::string_view FileCommon::GetPath() const
+    {
+        return filePath_;
+    }
+
+    std::shared_ptr<DataObject> FileCommon::Open()
     {
         return std::make_shared<DataObject>(object_);
     }
