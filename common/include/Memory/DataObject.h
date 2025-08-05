@@ -25,7 +25,7 @@ namespace Memory
         bool Allocate(size_t size);
         bool Resize(size_t size, bool force = false);
         size_t Size() const;
-        bool LoadFromStream(std::istream& is);
+        bool LoadFromStream(const std::istream& is);
         bool SaveToStream(std::ostream& os) const;
 
     private:

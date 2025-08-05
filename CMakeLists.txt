@@ -63,10 +63,16 @@ target_include_directories(mptf_core PUBLIC
 )
 
 # Ustawienie wymagań C++ dla biblioteki
-target_compile_features(mptf_core PUBLIC cxx_std_20)
+target_compile_features(mptf_core PUBLIC cxx_std_23)
 
 # Definiowanie aliasu targetu
 add_library(mptf_core::mptf_core ALIAS mptf_core)
+
+find_package(spdlog REQUIRED)
+find_package(fmt REQUIRED)
+
+# Linkowanie bibliotek spdlog i fmt
+target_link_libraries(mptf_core PUBLIC spdlog::spdlog fmt::fmt)
 
 # Package configuration and installation
 include(CMakePackageConfigHelpers)

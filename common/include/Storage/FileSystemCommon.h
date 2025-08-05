@@ -18,7 +18,7 @@ namespace Memory::Storage
             FileSystemCommon();
             ~FileSystemCommon();
 
-            DataObject Open(std::string_view path, bool createIf) override;
+            DataObject Open(std::string_view path, bool createIf = false) override;
             bool Write(std::string_view filePath, const std::shared_ptr<DataObject>& dataObject) override;
 
         private:

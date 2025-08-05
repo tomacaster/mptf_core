@@ -20,7 +20,7 @@ StorageBase::StorageBase()
 std::string& StorageBase::InitStorage(std::string appName)
 {
 
-    auto appEnv = getenv(Consts::APP_DIR_ENV);
+    auto appEnv = getenv(Consts::APP_DIR_ENV.data());
     if(appEnv) 
     {
         _homeDir = appEnv;
@@ -33,7 +33,7 @@ std::string& StorageBase::InitStorage(std::string appName)
         std::string path = fmt::format("{}\\{}", getenv("USERPROFILE"), appName.c_str());
 #endif
         _homeDir = fs::path(path);
-        setenv(Consts::APP_DIR_ENV, _homeDir.c_str(), 1);
+        setenv(Consts::APP_DIR_ENV.data(), _homeDir.c_str(), 1);
     }
 
     if(!fs::exists(_homeDir))

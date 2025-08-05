@@ -1,6 +1,7 @@
 // Memory/DataObject.cpp
 #include "Memory/DataObject.h"
 
+
 namespace Memory
 {
     DataObject::DataObject(const std::vector<char> &dataPtr) : data_(dataPtr)
@@ -60,4 +61,9 @@ namespace Memory
     {   
         return data_.size();
     }
+}
+
+bool Memory::DataObject::LoadFromStream(const std::istream &is)
+{
+    return false;
 }

@@ -54,8 +54,15 @@ DataObject FileSystemCommon::Open(std::string_view path, bool createIf)
             logger_->error("Cannot open file.");
             throw std::runtime_error("Cannot open file.");
         }
+    } else if (createIf) {
+        DataObject data;
+        if (data.LoadFromStream((std::ifstream(fs::path(path))))) {
+            return data;
+        }
+    } else {
+        throw std::runtime_error("File does not exist.");
     }
-    throw std::runtime_error("File does not exist.");
+    
 }
 
     bool FileSystemCommon::Write(std::string_view filePath, const std::shared_ptr<DataObject> &file)

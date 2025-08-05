@@ -12,7 +12,7 @@ namespace Memory::Storage
     public:
         virtual ~IFileSystem() = default;
 
-        virtual DataObject Open(std::string_view path, bool createIf) = 0;
+        virtual DataObject Open(std::string_view path, bool createIf = false) = 0;
         virtual bool Write(std::string_view filePath, const std::shared_ptr<DataObject>& dataObject) = 0;
     };
 }
