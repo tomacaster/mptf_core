@@ -11,10 +11,10 @@ Logger::Logger()
    
 }
 
-void Logger::InitLogger(std::string &logsDir)
+void Logger::InitLogger(const std::string &logsDir)
 {
     _consoleSink = std::make_shared<spdlog::sinks::stdout_color_sink_mt>();
-    _consoleSink->set_level(spdlog::level::info);
+    _consoleSink->set_level(spdlog::level::debug);
     _consoleSink->set_pattern(MAIN_LOGGER_PATTERN);
 
     std::shared_ptr<spdlog::logger> logger;
@@ -22,7 +22,7 @@ void Logger::InitLogger(std::string &logsDir)
     if (!logsDir.empty())
     {
         _fileSink = std::make_shared<spdlog::sinks::basic_file_sink_mt>(logsDir + "/logs/logs.log", true);
-        _fileSink->set_level(spdlog::level::trace);
+        _fileSink->set_level(spdlog::level::debug);
         _fileSink->set_pattern(MAIN_LOGGER_PATTERN);
 
         logger = std::make_shared<spdlog::logger>("defaultLogger", spdlog::sinks_init_list{_consoleSink, _fileSink});
