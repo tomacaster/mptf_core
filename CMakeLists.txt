@@ -17,8 +17,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 option(ENABLE_VALGRIND "Enable Valgrind for memory checking (Linux)" OFF)
 option(ENABLE_DR_MEMORY "Enable Dr. Memory for memory checking (Windows)" OFF)
 
-# Option for building documentation
-option(BUILD_DOC "Build the documentation with Doxygen" ON)
+# Option for building documentation - domyślnie WYŁĄCZONE gdy używane jako podprojekt
+option(BUILD_DOC "Build the documentation with Doxygen" OFF)
 
 # Configure ProjectConfig.h
 configure_file(
@@ -30,19 +30,28 @@ configure_file(
 # Add include directories
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/common/include)
 
-# Configure README.md and CHANGELOG.md
-configure_file(${CMAKE_SOURCE_DIR}/README.md.in ${CMAKE_BINARY_DIR}/README.md @ONLY)
-configure_file(${CMAKE_SOURCE_DIR}/CHANGELOG.md.in ${CMAKE_BINARY_DIR}/CHANGELOG.md @ONLY)
+# Configure README.md and CHANGELOG.md tylko jeśli pliki .in istnieją
+if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/README.md.in)
+    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/README.md.in ${CMAKE_BINARY_DIR}/README.md @ONLY)
+endif()
+
+if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/CHANGELOG.md.in)
+    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/CHANGELOG.md.in ${CMAKE_BINARY_DIR}/CHANGELOG.md @ONLY)
+endif()
 
 # Add subdirectories
 add_subdirectory(common)
 add_subdirectory(platform)
-add_subdirectory(tests)
+
+# Tylko jeśli chcemy budować testy - domyślnie WYŁĄCZONE
+option(BUILD_TESTS "Build tests" OFF)
+if(BUILD_TESTS)
+    add_subdirectory(tests)
+endif()
 
 file(GLOB_RECURSE MPTF_CORE_SOURCES
     "${CMAKE_CURRENT_SOURCE_DIR}/common/src/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/platform/src/*.cpp"
-    "${CMAKE_CURRENT_SOURCE_DIR}/tests/src/*.cpp"
 )
 
 # Dodaj diagnostykę, aby upewnić się, że pliki źródłowe są znalezione
@@ -59,7 +68,6 @@ add_library(mptf_core STATIC ${MPTF_CORE_SOURCES})
 target_include_directories(mptf_core PUBLIC 
     ${CMAKE_CURRENT_SOURCE_DIR}/common/include
     ${CMAKE_CURRENT_SOURCE_DIR}/platform/include
-    # Dodaj inne katalogi include, jeśli istnieją
 )
 
 # Ustawienie wymagań C++ dla biblioteki
@@ -74,34 +82,37 @@ find_package(fmt REQUIRED)
 # Linkowanie bibliotek spdlog i fmt
 target_link_libraries(mptf_core PUBLIC spdlog::spdlog fmt::fmt)
 
-# Package configuration and installation
-include(CMakePackageConfigHelpers)
-write_basic_package_version_file(
-    "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake"
-    VERSION ${PROJECT_VERSION}
-    COMPATIBILITY AnyNewerVersion
-)
+# Package configuration and installation - TYLKO jeśli instalujemy bibliotekę
+option(INSTALL_MPTF_CORE "Install mptf_core library" OFF)
+if(INSTALL_MPTF_CORE)
+    include(CMakePackageConfigHelpers)
+    write_basic_package_version_file(
+        "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake"
+        VERSION ${PROJECT_VERSION}
+        COMPATIBILITY AnyNewerVersion
+    )
 
-configure_package_config_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/cmake/mptf_coreConfig.cmake.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake"
-    INSTALL_DESTINATION ${CONFIG_INSTALL_DIR}
-)
+    configure_package_config_file(
+        "${CMAKE_CURRENT_SOURCE_DIR}/cmake/mptf_coreConfig.cmake.in"
+        "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake"
+        INSTALL_DESTINATION ${CONFIG_INSTALL_DIR}
+    )
 
-install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake"
-    "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake"
-    DESTINATION ${CONFIG_INSTALL_DIR}
-)
+    install(FILES
+        "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake"
+        "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake"
+        DESTINATION ${CONFIG_INSTALL_DIR}
+    )
+endif()
 
-# Doxygen integration
+# Doxygen integration - TYLKO jeśli jawnie włączymy dokumentację
 find_package(Doxygen)
 
 if(DOXYGEN_FOUND AND BUILD_DOC)
     message(STATUS "Doxygen found: ${DOXYGEN_EXECUTABLE}")
 
     # Set input directories for Doxygen
-    set(DOXYGEN_INPUT_DIR_SPACE "${CMAKE_SOURCE_DIR}/include ${CMAKE_SOURCE_DIR}/common ${CMAKE_SOURCE_DIR}/platform ${CMAKE_SOURCE_DIR}/tests")
+    set(DOXYGEN_INPUT_DIR_SPACE "${CMAKE_CURRENT_SOURCE_DIR}/common/include ${CMAKE_CURRENT_SOURCE_DIR}/platform/include")
 
     # Set the output directory for Doxygen documentation
     set(DOXYGEN_OUTPUT_DIR ${CMAKE_BINARY_DIR}/docs)
@@ -113,34 +124,37 @@ if(DOXYGEN_FOUND AND BUILD_DOC)
     configure_file(${DOXYFILE_IN} ${DOXYFILE_OUT} @ONLY)
 
     # Configure README.md and CHANGELOG.md based on templates
+if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/scripts/update_readme.py)
     add_custom_target(update_readme
-        COMMAND ${CMAKE_COMMAND} -E env python3 ${CMAKE_SOURCE_DIR}/scripts/update_readme.py ${CMAKE_SOURCE_DIR}/README.md.in ${CMAKE_BINARY_DIR}/README.md ${CMAKE_SOURCE_DIR}/CHANGELOG.md
-        DEPENDS ${CMAKE_BINARY_DIR}/README.md ${CMAKE_BINARY_DIR}/CHANGELOG.md
-        COMMENT "Updating README.md and generating CHANGELOG.md"
+        COMMAND ${CMAKE_COMMAND} -E env python3 
+            ${CMAKE_CURRENT_SOURCE_DIR}/scripts/update_readme.py 
+            ${CMAKE_CURRENT_SOURCE_DIR}/README.md.in 
+            ${CMAKE_BINARY_DIR}/README.md 
+            ${CMAKE_CURRENT_SOURCE_DIR}/CHANGELOG.md
+        COMMENT "Updating README.md and generating CHANGELOG.md for mptf_core"
     )
 
-    # Copy README.md and CHANGELOG.md to the source directory
+    # Copy README.md and CHANGELOG.md to the binary directory only
     add_custom_target(copy_docs
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
             ${CMAKE_BINARY_DIR}/README.md
-            ${CMAKE_SOURCE_DIR}/README.md
+            ${CMAKE_BINARY_DIR}/README_FINAL.md
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
             ${CMAKE_BINARY_DIR}/CHANGELOG.md
-            ${CMAKE_SOURCE_DIR}/CHANGELOG.md
-        DEPENDS ${CMAKE_BINARY_DIR}/README.md ${CMAKE_BINARY_DIR}/CHANGELOG.md
-        COMMENT "Copying generated README.md and CHANGELOG.md to the source directory"
+            ${CMAKE_BINARY_DIR}/CHANGELOG_FINAL.md
+        COMMENT "Finalizing documentation for mptf_core"
     )
+    
+    add_dependencies(mptf_core_doc update_readme copy_docs)
+endif()
 
     # Doxygen integration
-    add_custom_target(doc
+    add_custom_target(mptf_core_doc
         COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYFILE_OUT}
         WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-        COMMENT "Generating Doxygen documentation"
+        COMMENT "Generating Doxygen documentation for mptf_core"
         VERBATIM
     )
-
-    # Set dependencies: doc depends on update_readme and copy_docs
-    add_dependencies(doc update_readme copy_docs)
 
 else()
     if(BUILD_DOC)
