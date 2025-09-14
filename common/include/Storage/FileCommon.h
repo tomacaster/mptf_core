@@ -19,6 +19,13 @@ namespace Memory::Storage
             FileCommon(std::string_view path);
             ~FileCommon();
 
+            FileCommon(FileCommon&& other) noexcept = default;    
+
+            FileCommon& operator=(FileCommon&& other) noexcept = default;            
+
+            FileCommon(const FileCommon&) = delete;
+            FileCommon& operator=(const FileCommon&) = delete;
+
             std::shared_ptr<DataObject> Open();
             bool Write(const std::shared_ptr<DataObject>& data);
             std::string_view GetPath() const;

@@ -20,7 +20,12 @@ namespace Memory::Storage
 
             DataObject Open(std::string_view path, bool createIf = false) override;
             bool Write(std::string_view filePath, const std::shared_ptr<DataObject>& dataObject) override;
-
+            bool WriteText(std::string_view filePath, const std::string_view content) override;
+            bool Exists(std::string_view path) const override;
+            bool Remove(std::string_view path) override;
+            bool CreateDirectory(std::string_view path) override;
+            bool RemoveDirectory(std::string_view path) override;
+            std::string_view GetHomeDir() const override;
         private:
             std::shared_ptr<spdlog::logger> logger_;
     };
