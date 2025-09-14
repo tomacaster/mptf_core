@@ -8,11 +8,12 @@ class Logger
 {
     public:
         static void InitLogger(const std::string &logsDir = std::string());
-        static std::shared_ptr<spdlog::logger> GetClassLogger(const std::string& name);
+        static const std::string DEFAULT_LOGGER_PATTERN;
+        static std::shared_ptr<spdlog::logger> GetClassLogger(const std::string& name);        
         Logger();
         ~Logger();
     private:
-        static const std::string MAIN_LOGGER_PATTERN;
+        
         static std::shared_ptr<spdlog::sinks::stdout_color_sink_mt> _consoleSink;
         static std::shared_ptr<spdlog::sinks::basic_file_sink_mt> _fileSink;
 };

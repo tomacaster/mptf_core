@@ -2,7 +2,7 @@
 #include <iostream>
 #include <spdlog/spdlog.h>
 
-const std::string Logger::MAIN_LOGGER_PATTERN {"[%d-%m-%Y %H:%M:%S.%e] [%^%l%$] \033[90m%n\033[0m %v"};
+const std::string Logger::DEFAULT_LOGGER_PATTERN {"[%d-%m-%Y %H:%M:%S.%e] [%^%l%$] \033[90m%n\033[0m %v"};
 std::shared_ptr<spdlog::sinks::stdout_color_sink_mt> Logger::_consoleSink {nullptr};
 std::shared_ptr<spdlog::sinks::basic_file_sink_mt> Logger::_fileSink {nullptr};
 
@@ -15,7 +15,7 @@ void Logger::InitLogger(const std::string &logsDir)
 {
     _consoleSink = std::make_shared<spdlog::sinks::stdout_color_sink_mt>();
     _consoleSink->set_level(spdlog::level::debug);
-    _consoleSink->set_pattern(MAIN_LOGGER_PATTERN);
+    _consoleSink->set_pattern(DEFAULT_LOGGER_PATTERN);
 
     std::shared_ptr<spdlog::logger> logger;
 
@@ -23,7 +23,7 @@ void Logger::InitLogger(const std::string &logsDir)
     {
         _fileSink = std::make_shared<spdlog::sinks::basic_file_sink_mt>(logsDir + "/logs/logs.log", true);
         _fileSink->set_level(spdlog::level::debug);
-        _fileSink->set_pattern(MAIN_LOGGER_PATTERN);
+        _fileSink->set_pattern(DEFAULT_LOGGER_PATTERN);
 
         logger = std::make_shared<spdlog::logger>("defaultLogger", spdlog::sinks_init_list{_consoleSink, _fileSink});
     }
