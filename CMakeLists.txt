@@ -145,7 +145,7 @@ if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/scripts/update_readme.py)
         COMMENT "Finalizing documentation for mptf_core"
     )
     
-    add_dependencies(mptf_core_doc update_readme copy_docs)
+   # add_dependencies(mptf_core_doc update_readme copy_docs)
 endif()
 
     # Doxygen integration
